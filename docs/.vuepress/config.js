@@ -46,6 +46,7 @@ module.exports = {
             '/getting-started/welcome.md',
             '/getting-started/installation.md',
             '/getting-started/knowledge-assumptions.md',
+            '/getting-started/developer-experience.md',
             '/getting-started/tailwind-css.md',
             '/getting-started/runtime-parser.md',
             '/getting-started/statamic-3.3.md'
@@ -59,7 +60,6 @@ module.exports = {
             '/features/bard.md',
             '/features/browser-appearance.md',
             '/features/buttons.md',
-            '/features/commands.md',
             '/features/forms.md',
             '/features/globals.md',
             '/features/images.md',

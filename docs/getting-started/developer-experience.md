@@ -1,4 +1,4 @@
-# Commands
+# Developer Experience (CLI Commands)
 
 Peak comes with a growing collection of CLI commands to make tedious recurring tasks easier.
 
@@ -62,6 +62,17 @@ Run `php please peak:install-block` to pick a block and:
 * Create a partial with bespoke markup in `resources/views/page_builder/_{file_name}.antlers.html`.
 
 ## Install Preset
-This command installs a presets into Peak. A preset can be anything. By default you can install a `news` and an `events` collection that installs the relevant blueprints, templates, configuration, pages and page builder blocks into your site. You can also install features like FAQ, Modals, Theme toggle (dark mode), Search, Language picker and Breadcrumbs.
+This command installs a presets into Peak. A preset can be anything. A collection that installs the relevant blueprints, templates, configuration, pages and page builder blocks into your site or a simple navigation pattern or dark mode.
 
 Run `php please peak:install-preset` to pick a set.
+
+Some presets available include:
+
+* Breadcrumbs: A breadcrumbs partial using schema markup.
+* Events: A dated events collection with index and show templates (including JSON-ld) and a page builder set.
+* FAQ: A FAQ collection with a page builder set (including JSON-ld).
+* Language picker: A language picker for when you use multisite.
+* Modal: A modal that only has to be rendered once but can be used multiple times with different content.
+* News: A dated news collection with index and show templates (including JSON-ld) and a page builder set.
+* Search: A search form component and a styled search results template.
+* Theme toggle: A theme toggle typically used for a Tailwind class based dark mode.
