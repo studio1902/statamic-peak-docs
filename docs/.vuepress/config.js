@@ -16,8 +16,8 @@ module.exports = {
     title: 'Statamic Peak Docs',
     themeConfig: {
       docsBranch: 'main',
-      docsRepo: 'studio1902/statamic-peak',
-      docsDir: 'docs/docs',
+      docsRepo: 'studio1902/statamic-peak-docs',
+      docsDir: 'docs',
       editLinks: true,
       editLinkText: 'Improve this page on GitHub',
       lastUpdated: true,
