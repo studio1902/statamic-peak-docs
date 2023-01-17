@@ -9,7 +9,7 @@ Statamic comes with great search functionality out of the box. If you want to us
 {{ partial:components/search_form }}
 ```
 as the last list item in the main ul in `resources/views/navigation/_main.antlers.html`.
-* Uncomment the search results route  in `routes/web.php`.
+* Add the following route to `routes/web.php`: `Route::statamic('/search', 'search');`
 * Add fields you want indexed to the index in `config/statamic/search.php`. The `page_builder` field is added by default.
 * Update the search index by running `php please search:update --all`.
 * Make sure you add the update command to your [deployment script](/other/deployment-script.html).
