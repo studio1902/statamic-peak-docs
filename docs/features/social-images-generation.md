@@ -39,11 +39,3 @@ Note that you could opt to toggle the `Social image` and `Twitter image` fields 
 |---|
 | ![Listable columns](/visuals/screenshots/social-images-03.png) |
 
-## Remove feature
-By default the toggle to turn this feature on is only visibles to superusers. However if you completely want to remove this feature do the following:
-
-* Delete the `toggle` and `collections` from `resources/blueprints/globals/seo.yaml`
-* Delete the action `app/Actions/GenerateSocialImages.php`.
-* Delete the job `app/Jobs/GenerateSocialImagesJob.php`.
-* Delete the template `social_images.antlers.html`.
-* Delete the route from `routes/web.php`.
