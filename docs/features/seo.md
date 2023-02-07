@@ -1,6 +1,12 @@
 # SEO
 
-Peak includes full professional SEO support. It's easy to expand on since it's all built with native fields and templating.
+Peak includes full professional SEO support. It's easy to expand on since it's all built with native fields and templating. If you want to make any site particular changes publish the SEO views by running:
+
+```bash
+php artisan vendor:publish --tag="statamic-peak-seo-views"
+```
+
+And edit the files you want to make changes to in `resources/views/vendor/statamic-peak-seo/`. You can trash all the files you won't make changes to and have them automatically updated in the future.
 
 ## SEO features
 * Page title.
