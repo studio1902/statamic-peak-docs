@@ -2,7 +2,7 @@ module.exports = {
     description: 'Statamic Peak is an opinionated starter kit for all your bespoke Statamic sites.',
     head: [
       ['link', { rel: 'icon', href: '/favicon.svg' }],
-      ['link', { rel: 'mask-icon', href: '/favicon.svg', color: '#FF0274' }],
+      ['link', { rel: 'mask-icon', href: '/favicon.svg', color: '#7825FB' }],
       ['script', { src: 'https://virtuous-ten.studio1902.nl/script.js', 'data-site': 'CCKEJUTO', defer: true }],
       ['meta', { property: 'og:title', content: 'Statamic Peak Docs' }],
       ['meta', { property: 'og:description', content: 'Statamic Peak is an opinionated starter kit for all your bespoke Statamic sites.' }],
