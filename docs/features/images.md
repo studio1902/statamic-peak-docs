@@ -1,5 +1,7 @@
 # Images
 
+> Assets uploaded to the Images container will be resized to a max width of `2500` pixels. This can be changed in `config/statamic/assets.php`.
+
 Peak comes with a picture partial that will add responsive sourcesets to your images. In `resources/views/components/_figure.antlers.html` you can see an example of how to include the picture partial. It accepts the following arguments:
 
 * `image`: *asset*, the actual image variable.
