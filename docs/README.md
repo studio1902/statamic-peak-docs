@@ -23,7 +23,7 @@ features:
     details: Let your client generate themed custom social images for all entries based on your own templates.
   - title: A lot more
     details: Responsive assets, browser appearance configuration, favicon generation, button system, dark mode support, forms and more.
-footer: '© 2020 - 2021 | Studio 1902'
+footer: '© 2020 - 2023 | Studio 1902'
 footerHTML: true
 editLink: false
 lastUpdated: false
