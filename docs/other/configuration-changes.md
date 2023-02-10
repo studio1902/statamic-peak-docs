@@ -6,11 +6,8 @@ Peak changes the default Statamic config. The following is different:
 | --- | --- | --- |
 | `.env.example` |  | Add more default Statamic and Redis settings by default.
 | `app/Console/Kernel.php` |  | Add a schedule you can invoke via a cron to warm all caches.
-| `app/Http/Controllers/DynamicToken.php` |  | New Controller for [forms](/features/forms.html) |
-| `app/listeners/GenerateFavicons.php` |  | Listen to a GlobalSavedEvent to generate [favicons](/features/browser-appearance.html).
 | `app/providers/AppServiceProvider.php` |  | Enables the use of a section field in the form builder.
-| `app/providers/AppServiceProvider.php` |  | Adds 404 page entry data to the 404 template when an error hits.
-| `app/providers/EventServiceProvider.php` |  | Listen to a GlobalSavedEvent to generate [favicons](/features/browser-appearance.html).
+| `app/providers/AppServiceProvider.php` |  | Link to the Peak SEO addon when a 404 hits.
 | `content/assets/favicons.yaml` |  | An asset container where the [automated favicon feature](/features/browser-appearance.html) stores it's favicons in. |
 | `config/filesystems.php` |  | Filesystems for the Images, Files, Favicon and Social Images asset containers. |
 | `config/ignition.php` | `'editor' => env('IGNITION_EDITOR', 'phpstorm')` | `'editor' => env('IGNITION_EDITOR', 'vscode')` |
@@ -30,7 +27,3 @@ Peak changes the default Statamic config. The following is different:
 | `config/statamic/static_caching.php` | `'rules' => [ // ]` | `'rules' => 'all'` |
 | `config/statamic/static_caching.php` | `'exclude' => [ // ]` | `'exclude' => '/sitemap.xml'` |
 | `config/statamic/users.php` | `'avatars' => 'initials'` | `'avatars' => 'gravatar'` |
-| `resources/views/widgets/images-missing-alt.blade.php` |  | | `app/Widgets/ImagesMissingAlt.php` |  | New widget to [display assets with missing alt texts](/features/widgets.html). |
-| `routes/web.php` |  | Routes for the [favicons](/features/browser-appearance.html) feature.
-| `routes/web.php` |  | Routes for the search [functionality](/features/search.html). Commented by default.
-| `routes/web.php` |  | Routes for the sitemap and [dynamic form](/features/forms.html) token.
