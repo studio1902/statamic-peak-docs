@@ -14,8 +14,6 @@ npm install puppeteer --global
 
 Once you've installed the required software you can enable the functionality in the SEO globals -> Social Sharing. Make sure to flick on the switch and select each collection for which you want to enable auto generated social images.
 
-Finally uncomment the Social Images Route in `routes/web.php`.
-
 Publish the Peak SEO addon views:
 ```bash
 php artisan vendor:publish --tag="statamic-peak-seo-views"
@@ -33,7 +31,6 @@ Once you've opted in the collections you want this available for you can select 
 | Global configuration | Generating the images |
 |---|---|
 | ![Forms backend](/visuals/screenshots/social-images-01.png) | ![Forms frontend](/visuals/screenshots/social-images-02.png) |
-
 
 ## Listable columns
 Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client an easily scan collections for missing images.
