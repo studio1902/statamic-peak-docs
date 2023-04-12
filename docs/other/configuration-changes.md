@@ -6,7 +6,6 @@ Peak changes the default Statamic config. The following is different:
 | --- | --- | --- |
 | `.env.example` |  | Add more default Statamic and Redis settings by default.
 | `app/Console/Kernel.php` |  | Add a schedule you can invoke via a cron to warm all caches.
-| `app/providers/AppServiceProvider.php` |  | Enables the use of a section field in the form builder.
 | `app/providers/AppServiceProvider.php` |  | Link to the Peak SEO addon when a 404 hits.
 | `content/assets/favicons.yaml` |  | An asset container where the [automated favicon feature](/features/browser-appearance.html) stores it's favicons in. |
 | `config/filesystems.php` |  | Filesystems for the Images, Files, Favicon and Social Images asset containers. |
