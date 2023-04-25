@@ -13,7 +13,3 @@ Peak uses the Tailwind CSS JIT compiler for fast compilation and no differences 
 Read up on the [Tailwind CSS Forms](https://github.com/tailwindlabs/tailwindcss-forms) and [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugins. They're easy to customize and the config file for typography already includes some basic customization so your theme colors are automatically applied. The plugins are easy to remove if you don't want to use them.
 
 > Note: if you don't want to define your custom CSS in Tailwind CSS JS config files you can add it to `resources/css/custom.css`. Make sure to read up on the use of [@layer](https://tailwindcss.com/docs/functions-and-directives#layer) to instruct what styles Tailwind CSS should keep or purge. Use whatever method you prefer.
-
-Peak ships with a few custom Tailwind CSS goodies:
-* `.break-decent`: uses `word-break: break-word`.
-* Style file upload form elements by default using your site's theme colors.

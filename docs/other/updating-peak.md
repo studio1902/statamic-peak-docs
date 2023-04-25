@@ -1,5 +1,7 @@
 # Updating Peak
 
-Since this is a Starter Kit and you usually edit all kinds of files in it, updating Peak **cannot be automated**. That means if you want to use the latest Peak features you have to skim through the [changelog](https://github.com/studio1902/statamic-peak/blob/main/CHANGELOG.md) and manually copy over the bits you want to use in your older projects.
+The Peak addons can be updated using `composer update`. Whenever the addons do a major version bump there are breaking changes included and you should check the changelog for the relevant files you need to update in your base install.
+
+Since this is a Starter Kit and you usually edit all kinds of files in it the basic Peak kit **cannot be automated**. That means if you want to use the latest Peak features you have to skim through the [changelog](https://github.com/studio1902/statamic-peak/blob/main/CHANGELOG.md) and manually copy over the bits you want to use in your older projects.
 
 All relevant PR's and commits are listed in the changelog so it should be pretty straight forward to find out what files you need to change.

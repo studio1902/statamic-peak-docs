@@ -28,13 +28,5 @@ Enable Redis by setting `QUEUE_CONNECTION=redis` in your `.env` file. Make sure 
 ## Generate the images
 Once you've opted in the collections you want this available for you can select the entries you want to generate images for in the collection view.
 
-| Global configuration | Generating the images |
-|---|---|
-| ![Forms backend](/visuals/screenshots/social-images-01.png) | ![Forms frontend](/visuals/screenshots/social-images-02.png) |
-
 ## Listable columns
 Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client an easily scan collections for missing images.
-
-| Listable columns |
-|---|
-| ![Listable columns](/visuals/screenshots/social-images-03.png) |

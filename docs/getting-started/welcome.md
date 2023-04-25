@@ -21,7 +21,4 @@ Maintaining Peak demands a lot of my time and it probably saves you a lot. Your 
   </a>
 </div>
 
-### Live screencast on Peak
-<div class='embed-container'><iframe src='https://www.youtube.com/embed/79Ist1HrHoA' frameborder='0' allowfullscreen></iframe></div>
-
 The Peak branding is done by Jouke Zult from [Merkactivisten](https://merkactivisten.nl). Thank you so much!

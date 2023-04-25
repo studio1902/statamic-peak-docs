@@ -18,11 +18,11 @@ features:
   - title: Page builder
     details: This kit features a very extendible page builder using native Statamic fields, including Bard for long form content.
   - title: SEO
-    details: Peak comes with full blown professional SEO support including various tracker support and a built in cookie banner.
-  - title: Social Images
-    details: Let your client generate themed custom social images for all entries based on your own templates.
-  - title: A lot more
-    details: Responsive assets, browser appearance configuration, favicon generation, button system, dark mode support, forms and more.
+    details: Peak comes with full blown professional SEO support including various tracker support, a built in GDPR compliant cookie banner and generating social images.
+  - title: Tooling
+    details: Tools that help you generate templates, page builder blocks or install whole presets onto your site.
+  - title: More
+    details: Responsive images, browser appearance configuration, favicon generation, button system, dark mode support, forms and more.
 footer: '© 2020 - 2023 | Studio 1902'
 footerHTML: true
 editLink: false

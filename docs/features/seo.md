@@ -30,15 +30,7 @@ And edit the files you want to make changes to in `resources/views/vendor/statam
 
 > Note: by default only `superusers` and the `marketeer` role get access to the SEO global configuration.
 
-| Globals error messages  | Globals SEO  |  Globals Cookie Banner  | Cookie Banner |
-|---|---|---|---|
-| ![SEO globals JSON-ld](/visuals/screenshots/seo-globals-01.png) | ![SEO globals sitemap](/visuals/screenshots/seo-globals-02.png) | ![SEO globals cookie banner](/visuals/screenshots/cookie-banner-config.png) | ![Cookie banner](/visuals/screenshots/cookie-banner.png) |
-
-| Entry specific SEO |
-|---|
-| ![Page builder](/visuals/screenshots/entry-seo.png) |
-
-## Cookie consent banner
+## GDPR Compliant Cookie Banner
 
 When you use Google Analytics or Google Tag Manager you can enable the cookie consent banner to comply with GPDR. The consent banner uses Google's Consent API so you might need to properly set this up in your GTM/Analytics settings.
 

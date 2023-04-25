@@ -12,17 +12,12 @@ Peak renders forms and mail templates dynamically so you can add as many forms a
 
 The default contact form has a required consent field. The field handle is `consent`. Due to restraints the form template contains a conditional that depends on this specific handle name. Don't use it for other form fields.
 
-The Peak form templates support the built in Statamic Alpine conditional logic driver.
-
 The forms sending is done with fetch and uses Alpine to display the various notifications.
 
-> Note: Peak dynamically fetches a CSRF token, so you can use forms with [Static File Caching](https://statamic.dev/static-caching) enabled. This technique is based on the [Dynamic Token](https://statamic.com/addons/mykolas-mankevicius/dynamic-token) addon for Statamic v2 by Mykolas. It's ported to v3 and included with Peak. You can hook in on fetching a dynamic token by using `window.getToken()` in your (Alpine) JavaScript.
-
-> Note: When using BrowserSync and visit your site by means of an IP adress as url; You'll get an 500-error upon submitting the form. This is caused by Statamic's FormController which identifies your Site by means of the FQDN listed in `config/statamic/sites.php`. As you visit the website through an IP adress this lookup will fail, resulting in the said 500 `Call to a member function shortLocale() on null` error.
-
-| Forms backend | Forms frontend  |
-|---|---|
-| ![Forms backend](/visuals/screenshots/forms-backend.png) | ![Forms frontend](/visuals/screenshots/forms-frontend.png) |
+> Note: Peak dynamically fetches a CSRF token, so you can use forms with [Static File Caching](https://statamic.dev/static-caching) enabled. You can use this logic by using `window.getToken()` in your (Alpine) JavaScript to fetch your own token.
 
 ## Conditional logic
 The Peak form component and published field views support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields) added in Statamic 3.3
+
+## Sections
+The Peak form component and published field views support the new sections introduced in Statamic 4.0.

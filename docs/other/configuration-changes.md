@@ -7,11 +7,9 @@ Peak changes the default Statamic config. The following is different:
 | `.env.example` |  | Add more default Statamic and Redis settings by default.
 | `app/Console/Kernel.php` |  | Add a schedule you can invoke via a cron to warm all caches.
 | `app/providers/AppServiceProvider.php` |  | Link to the Peak SEO addon when a 404 hits.
-| `content/assets/favicons.yaml` |  | An asset container where the [automated favicon feature](/features/browser-appearance.html) stores it's favicons in. |
 | `config/filesystems.php` |  | Filesystems for the Images, Files, Favicon and Social Images asset containers. |
 | `config/ignition.php` | `'editor' => env('IGNITION_EDITOR', 'phpstorm')` | `'editor' => env('IGNITION_EDITOR', 'vscode')` |
 | `config/ignition.php` | `'theme' => env('IGNITION_THEME', 'light')` | `'theme' => env('IGNITION_THEME', 'auto')` |
-| `config/statamic/antlers.php` | `version' => 'regex'` | `'version' => 'runtime'` |
 | `config/statamic/assets.php` | `driver' => 'gd'` | `'driver' => env('IMAGE_MANIPULATION_DRIVER', 'gd')` |
 | `config/statamic/assets.php` | `'cache' => false` | `'cache' => env('SAVE_CACHED_IMAGES', true),` |
 | `config/statamic/assets.php` |  | Add a default replacement preset. |

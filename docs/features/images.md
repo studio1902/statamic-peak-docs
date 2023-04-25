@@ -27,8 +27,6 @@ The following example renders a squared image on small screens and a 4/3 image o
 
 See [this article](https://studio1902.nl/blog/responsive-images-with-statamic-tailwind-and-glide/) for more information. Although it was written for Statamic V2, the concept of the partial remains the same for v3.
 
-> Note: alternatively you could use the fantastic [Responsive Images Addon](https://github.com/spatie/statamic-responsive-images) by [Rias](https://github.com/riasvdv) from Spatie. It has few more features and uses Javascript to auto populate your `sizes` attribute.
-
 ### Asset presets
 Peak doesn't use Asset Presets but generates images on the fly. This results in less storage being consumed and a faster CP experience when uploading assets. The downside is that the **first visit** after using new images will be slow as Statamic has to generate and cache all requested variants. When deploying you can bypass this by running `php please static:warm --queue`. That command will generate the static cache and generate all missing asset variants.
 
