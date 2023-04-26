@@ -33,7 +33,7 @@ php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
 
 ## Tools
-The Tools addon contains various features like the CSRF token logic, picture partial, the noscript partial, the pagination partial, the toolbar and the missing alt text widget.
+The Tools addon contains various features like the CSRF token logic, picture partial, the noscript partial, the pagination partial, the toolbar, the missing alt text widget and [Live Preview](/features/live-preview.html) enhancements.
 
 Run the following commands to publish views.
 ```bash
