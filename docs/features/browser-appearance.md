@@ -1,6 +1,15 @@
 # Browser appearance
 
-Peak adds a `Browser appearance` global where you can set multiple browser specific properties and generate favicons.
+Peak adds a `Browser appearance` global where you can set multiple browser specific properties and generate favicons. The logic is contained within the Browser Appearance Addon.
+
+Run the following commands to publish fieldsets and views if you want to make any changes to your site.
+
+```bash
+php artisan vendor:publish --tag="statamic-peak-browser-appearance-fieldsets"
+php artisan vendor:publish --tag="statamic-peak-browser-appearance-views"
+```
+
+And edit the files you want to make changes to in `resources/views/vendor/statamic-peak-browser-appearance/` or `resources/fieldsets/vendor/statamic-peak-browser-appearance/`. You can trash all the files you won't make changes to and have them automatically updated in the future.
 
 ## General settings
 You can set the following properties/meta-tags:
@@ -12,10 +21,6 @@ You can set the following properties/meta-tags:
 * Run as Apple mobile web app (and change status bar color).
 * Run as Android mobile web app.
 
-| Browser appearance |
-|---|
-| ![Browser appearance](/visuals/screenshots/browser-appearance.png) |
-
 ## Favicons
 By uploading a single favicon SVG to the favicons asset container you can generate favicons for modern browsers on the fly. The favicon partial will spit out the following favicons:
 
@@ -26,7 +31,3 @@ By uploading a single favicon SVG to the favicons asset container you can genera
 * A meta with `name="theme-color"` with a custom color.
 
 > Note: To use the favicon feature you need to have the `PHP Imagick module` installed. Forge users: newer servers ship with this automatically. Ploi users: you can optionally install this with a click in the Ploi interface.
-
-| Favicons |
-|---|
-| ![Favicons](/visuals/screenshots/favicons.png) |
