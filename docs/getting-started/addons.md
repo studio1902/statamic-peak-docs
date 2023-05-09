@@ -15,10 +15,13 @@ php artisan vendor:publish --tag="statamic-peak-browser-appearance-fieldsets"
 php artisan vendor:publish --tag="statamic-peak-browser-appearance-views"
 ```
 
+> Note: When using the Eloquent Driver make sure you store blueprints and fieldsets as files and not in the database.
+
 ## Commands
 The Commands addon contains the various [Peak CLI commands](/getting-started/commands.html) that help speed up development. Make sure to read up on them before starting your project.
 
 Run the following commands to publish the addons stubs.
+
 ```bash
 php artisan vendor:publish --tag="statamic-peak-commands-stubs"
 ```
@@ -27,15 +30,19 @@ php artisan vendor:publish --tag="statamic-peak-commands-stubs"
 The SEO addon contains all [SEO fieldsets and partials](/features/seo.html#seo). It also contains all logic and templates used for [generating OG images](/features/social-images-generation.html).
 
 Run the following commands to publish fieldsets and views.
+
 ```bash
 php artisan vendor:publish --tag="statamic-peak-seo-fieldsets"
 php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
 
+> Note: When using the Eloquent Driver make sure you store blueprints and fieldsets as files and not in the database.
+
 ## Tools
 The Tools addon contains the following features: the [CSRF token logic](/features/forms.html#forms), [picture partial](/features/images.html#images), [the noscript partial](/features/noscript.html), [the skip to content](/features/skip-to-content.html) partial [the pagination](/features/pagination.html#pagination) partial, [the toolbar](/other/toolbar.html#toolbar), [the missing alt text widget](/features/missing-alt-widget.html) and [live Preview](/features/live-preview.html) enhancements.
 
 Run the following commands to publish views.
+
 ```bash
 php artisan vendor:publish --tag="statamic-peak-tools-views"
 ```
