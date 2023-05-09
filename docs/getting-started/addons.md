@@ -7,7 +7,7 @@ Each addon has fieldsets, views or stubs you can publish to make changes needed 
 The files in those folders take precedence over the files in the addons. So in general it would be wise to only keep files that you need to make changes to and trash published files that don't need edits.
 
 ## Browser Appearance
-The Browser Apperance addon contains contains the browser appearance fieldsets, partials and listener that are being called in by the Browser Appearance Global. In here you can generate favicons, configure browser behaviour and set browser toolbar colors.
+The Browser Apperance addon contains contains the [browser appearance](/features/browser-appearance.html) fieldsets, partials and listener that are being called in by the Browser Appearance Global. In here you can generate favicons, configure browser behaviour and set browser toolbar colors.
 
 Run the following commands to publish fieldsets and views.
 ```bash
@@ -24,7 +24,7 @@ php artisan vendor:publish --tag="statamic-peak-commands-stubs"
 ```
 
 ## SEO
-The SEO addon contains all SEO fieldsets and partials. It also contains all logic and templates used for generating OG images.
+The SEO addon contains all [SEO fieldsets and partials](/features/seo.html#seo). It also contains all logic and templates used for [generating OG images](/features/social-images-generation.html).
 
 Run the following commands to publish fieldsets and views.
 ```bash
@@ -33,7 +33,7 @@ php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
 
 ## Tools
-The Tools addon contains various features like the CSRF token logic, picture partial, the noscript partial, the pagination partial, the toolbar, the missing alt text widget and [Live Preview](/features/live-preview.html) enhancements.
+The Tools addon contains the following features: the [CSRF token logic](/features/forms.html#forms), [picture partial](/features/images.html#images), [the noscript partial](/features/noscript.html), [the skip to content](/features/skip-to-content.html) partial [the pagination](/features/pagination.html#pagination) partial, [the toolbar](/other/toolbar.html#toolbar), [the missing alt text widget](/features/missing-alt-widget.html) and [live Preview](/features/live-preview.html) enhancements.
 
 Run the following commands to publish views.
 ```bash

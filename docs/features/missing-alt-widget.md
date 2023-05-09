@@ -10,3 +10,9 @@ The Peak Tools addon contains a widget to display images in asset containers tha
     'width' => 50
 ],
 ```
+
+The Blade view that is used to render this widget on your dashboard is part of the [Tools Addon](/getting-started/addons.html#tools). If you want to make changes to the views from this addon, you can publish them by running:
+
+```bash
+php artisan vendor:publish --tag="statamic-peak-tools-views"
+```

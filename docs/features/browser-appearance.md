@@ -2,6 +2,15 @@
 
 Peak adds a `Browser appearance` global where you can set multiple browser specific properties and generate favicons. The logic is contained within the Browser Appearance Addon.
 
+Run the following commands to publish fieldsets and views if you want to make any changes to your site.
+
+```bash
+php artisan vendor:publish --tag="statamic-peak-browser-appearance-fieldsets"
+php artisan vendor:publish --tag="statamic-peak-browser-appearance-views"
+```
+
+And edit the files you want to make changes to in `resources/views/vendor/statamic-peak-browser-appearance/` or `resources/fieldsets/vendor/statamic-peak-browser-appearance/`. You can trash all the files you won't make changes to and have them automatically updated in the future.
+
 ## General settings
 You can set the following properties/meta-tags:
 

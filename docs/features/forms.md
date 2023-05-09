@@ -16,6 +16,12 @@ The forms sending is done with fetch and uses Alpine to display the various noti
 
 > Note: Peak dynamically fetches a CSRF token, so you can use forms with [Static File Caching](https://statamic.dev/static-caching) enabled. You can use this logic by using `window.getToken()` in your (Alpine) JavaScript to fetch your own token.
 
+The form handler view that is included in your form partial is part of the [Tools Addon](/getting-started/addons.html#tools). If you want to make changes to the views from this addon, you can publish them by running:
+
+```bash
+php artisan vendor:publish --tag="statamic-peak-tools-views"
+```
+
 ## Conditional logic
 The Peak form component and published field views support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields) added in Statamic 3.3
 
