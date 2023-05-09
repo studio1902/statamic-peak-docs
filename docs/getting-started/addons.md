@@ -27,7 +27,7 @@ php artisan vendor:publish --tag="statamic-peak-commands-stubs"
 ```
 
 ## SEO
-The SEO addon contains all [SEO fieldsets and partials](/features/seo.html#seo). It also contains all logic and templates used for [generating OG images](/features/social-images-generation.html).
+The SEO addon contains all [SEO fieldsets and partials](/features/seo.html#seo). It also contains all logic and templates used for [generating OG images](/features/social-images-generation.html) and [redirects](/features/redirects.html).
 
 Run the following commands to publish fieldsets and views.
 
