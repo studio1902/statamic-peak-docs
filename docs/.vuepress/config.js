@@ -50,6 +50,7 @@ module.exports = {
             '/getting-started/commands.md',
             '/getting-started/tailwind-css.md',
             '/getting-started/screencasts.md',
+            '/getting-started/upgrade-guide.md',
           ],
         },
         {
