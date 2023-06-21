@@ -89,6 +89,7 @@ module.exports = {
             '/other/lighthouse.md',
             '/other/localization.md',
             '/other/oklch.md',
+            '/other/redis-queue.md',
             '/other/reduced-motion.md',
             '/other/reference-assets-in-css.md',
             '/other/toolbar.md',
