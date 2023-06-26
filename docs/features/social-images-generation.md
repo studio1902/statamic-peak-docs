@@ -27,4 +27,4 @@ The actual generation of the images is a job, so it's queued when you use Redis.
 Once you've opted in the collections you want this available for you can select the entries you want to generate images for in the collection view.
 
 ## Listable columns
-Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client an easily scan collections for missing images.
+Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client can easily scan collections for missing images.
