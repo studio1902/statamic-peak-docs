@@ -20,6 +20,9 @@ php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
 If you don't plan on making any other changes to the SEO integration you only have to keep `resources/views/vendor/statamic-peak-seo/components/_social_image.antlers.html` and edit that file to determine how the images should look. You can go wild with Antlers and Tailwind CSS and add any field you'd like to use. If you want to preview the images in your browser visit `http://yoursite.test/social-images/{id}`.
 
+### Custom node and npm binaries
+Depending on your setup, node or npm might be not directly available to Browsershot. If you need to manually set these binary paths, you can do this by setting `SOCIAL_IMAGE_NODE_BINARY` and `SOCIAL_IMAGE_NPM_BINARY` in your `.env` file.
+
 ## Redis as queue driver
 The actual generation of the images is a job, so it's queued when you use Redis. [Read more on how to properly configure Redis](/other/redis-queue.html).
 
