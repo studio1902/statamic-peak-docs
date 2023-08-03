@@ -4,7 +4,7 @@
 * [Peak on Laravel News](https://laravel-news.com/statamic-peak)
 
 ## Made with Peak
-This is a collection ofo (alphabetically ordered) sites made with Statamic using Peak:
+This is a collection of (alphabetically ordered) sites made with Statamic using Peak:
 
 * [1902.studio](https://1902.studio) by [Studio 1902](https://1902.studio)
 * [aanbestedingen.corusadvies.nl](https://aanbestedingen.corusadvies.nl) by [Studio 1902](https://studio1902.nl)
