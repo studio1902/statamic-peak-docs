@@ -82,7 +82,6 @@ module.exports = {
           link: '/other/awesome.md',
           children: [
             '/other/awesome.md',
-            '/other/configuration-changes.md',
             '/other/custom-fonts.md',
             '/other/deployment-script.md',
             '/other/focus-visible.md',
