@@ -1,8 +1,8 @@
 # Images
 
-> Assets uploaded to the Images container will be resized to a max width of `2500` pixels. This can be changed in `config/statamic/assets.php`.
+> Assets uploaded to the Images container will be resized to a max width of `4500` pixels. This can be changed in `config/statamic/assets.php`.
 
-Peak comes with a picture partial that will add responsive sourcesets to your images. In `resources/views/components/_image_.antlers.html` you can see an example of how to include the picture partial. It accepts the following arguments:
+Peak comes with a picture partial that will add responsive sourcesets to your images. In `resources/views/components/_image.antlers.html` you can see an example of how to include the picture partial. It accepts the following arguments:
 
 * `image`: *asset*, the actual image variable.
 * `aspect_ratio`: *string*, Pass in an aspect ratio to crop the image in a certain way. `16/9` for example or specify a second ratio for larger screens: `1/1 large:1/2`.

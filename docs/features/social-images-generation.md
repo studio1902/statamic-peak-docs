@@ -20,11 +20,20 @@ php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
 If you don't plan on making any other changes to the SEO integration you only have to keep `resources/views/vendor/statamic-peak-seo/components/_social_image.antlers.html` and edit that file to determine how the images should look. You can go wild with Antlers and Tailwind CSS and add any field you'd like to use. If you want to preview the images in your browser visit `http://yoursite.test/social-images/{id}`.
 
+### Custom node and npm binaries
+
+> You can locate your specific paths by running `which node` and `which npm` in your terminal.
+
+Depending on your setup, node or npm might be not directly available to Browsershot. If you need to manually set these binary paths, you can do this by setting `SOCIAL_IMAGE_NODE_BINARY` and `SOCIAL_IMAGE_NPM_BINARY` in your `.env` file.
+
 ## Redis as queue driver
+
+> You can set the queue name by defining `SOCIAL_IMAGE_QUEUE_NAME` in your `.env` file.
+
 The actual generation of the images is a job, so it's queued when you use Redis. [Read more on how to properly configure Redis](/other/redis-queue.html).
 
 ## Generate the images
 Once you've opted in the collections you want this available for you can select the entries you want to generate images for in the collection view.
 
 ## Listable columns
-Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client an easily scan collections for missing images.
+Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client can easily scan collections for missing images.
