@@ -93,6 +93,7 @@ module.exports = {
             '/other/reference-assets-in-css.md',
             '/other/toolbar.md',
             '/other/updating-peak.md',
+            '/other/vite.md',
           ],
         },
         {
