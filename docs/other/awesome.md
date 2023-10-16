@@ -26,6 +26,7 @@ This is a collection of (alphabetically ordered) sites made with Statamic using 
 * [mam.org.mm](https://mam.org.mm) by [Studio 1902](https://studio1902.nl)
 * [merkactivisten.nl](https://merkactivisten.nl) by [Studio 1902](https://studio1902.nl) & [Merkactivisten](https://merkactivisten.nl)
 * [roerganger.com](https://roerganger.com) by [VanNut](https://vannut.nl)
+* [schoolholidays.com.au](https://schoolholidays.com.au) by [Ruslan Osipov](https://ruslan.rocks/about)
 * [schreinerei-neub.de](https://schreinerei-neub.de) by [Daniel Wentsch](https://wentsch.me)
 * [sdghousegroningen.nl](https://sdghousegroningen.nl) by [Studio 1902](https://studio1902.nl)
 * [socialebenadering.nl](https://socialebenadering.nl) by [Studio 1902](https://studio1902.nl) & [Merkactivisten](https://merkactivisten.nl)
