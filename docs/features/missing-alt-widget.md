@@ -7,7 +7,7 @@ The Peak Tools addon contains a widget to display images in asset containers tha
     'type' => 'images_missing_alt',
     'container' => 'assets', // The handle of your asset container.
     'limit' => 5, // The maximum amount of images without alt text you want displayed at once.
-    'width' => 50
+    'width' => 50 // The width of your widget.
 ],
 ```
 
@@ -16,3 +16,7 @@ The Blade view that is used to render this widget on your dashboard is part of t
 ```bash
 php artisan vendor:publish --tag="statamic-peak-tools-views"
 ```
+
+## Caching
+
+When your site has a lot of assets, fetching all assets can have a negative impact on the performance of your dashboard. Therefore the assets only get3 fetched once and will be cached indefinitely. As soon as an asset gets deleted, edited or uploaded, a job will be dispatched to refetch the cache. This job will be queued when using a queue driver like Redis. This is recommended on production.
