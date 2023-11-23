@@ -1,6 +1,8 @@
 # Forms
 
-Peak renders forms and mail templates dynamically so you can add as many forms as you'd like, just by creating them in the CP. Peak ships with a default basic contact form you can edit using the following files:
+Peak Forms live validate and submit using [Laravel Precognition](https://laravel.com/docs/10.x/precognition). The forms are designed around [Form Design Patterns](https://formdesignpatterns.com) and they support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields).
+
+Peak renders forms and mail templates dynamically so you can add as many forms as you'd like, just by creating them in the CP. They also support form sections you can create in the form blueprint builder. Peak ships with a default basic contact form you can edit using the following files:
 
 * `resources/forms/contact.yaml` The contact form configuration.
 * `resources/blueprints/forms/contact.yaml` The forms blueprint defining all the fields.
@@ -12,18 +14,16 @@ Peak renders forms and mail templates dynamically so you can add as many forms a
 
 The default contact form has a required consent field. The field handle is `consent`. Due to restraints the form template contains a conditional that depends on this specific handle name. Don't use it for other form fields.
 
-The forms sending is done with fetch and uses Alpine to display the various notifications.
-
-> Note: Peak dynamically fetches a CSRF token, so you can use forms with [Static File Caching](https://statamic.dev/static-caching) enabled. You can use this logic by using `window.getToken()` in your (Alpine) JavaScript to fetch your own token.
-
+## Form handler
 The form handler view that is included in your form partial is part of the [Tools Addon](/getting-started/addons.html#tools). If you want to make changes to the views from this addon, you can publish them by running:
 
 ```bash
 php artisan vendor:publish --tag="statamic-peak-tools-views"
 ```
 
-## Conditional logic
-The Peak form component and published field views support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields) added in Statamic 3.3
+## Success Hook
+You can pass in an argument to the form handler as a success hook. For example: you could use this to trigger a dataLayer event if your site relies on GTM and your marketer wants to track form events.
 
-## Sections
-The Peak form component and published field views support the new sections introduced in Statamic 4.0.
+```
+ {{ partial:statamic-peak-tools::snippets/form_handler success_hook="console.log('Hurray!')" }}
+```
