@@ -4,6 +4,8 @@ While you could make different templates for all your page types, the idea is to
 
 If the layout of a page is totally different - or you really want to - you can always opt for using templates.
 
+The blocks in the page builder are layed out using [Stacks](/features/stacks.md).
+
 ## Adding blocks
 Add a block by using the [add block command](/getting-started/commands.html#add-page-builder-block). Alternatively you could edit `resources/fieldsets/page_builder.yaml` to add blocks (preferably imports) to the fieldset. In `resources/views/default.antlers.html` you can see the blocks being loaded. Antlers will look in the `resources/views/page_builder/` folder for partials with the handle of your block.
 

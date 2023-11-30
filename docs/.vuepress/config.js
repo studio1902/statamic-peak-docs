@@ -71,6 +71,7 @@ module.exports = {
             '/features/page-builder.md',
             '/features/pagination.md',
             '/features/redirects.md',
+            '/features/stacks.md',
             '/features/skip-to-content.md',
             '/features/social-images-generation.md',
             '/features/seo.md',
