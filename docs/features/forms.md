@@ -1,6 +1,8 @@
 # Forms
 
-Peak Forms live validate and submit using [Laravel Precognition](https://laravel.com/docs/10.x/precognition). The forms are designed around [Form Design Patterns](https://formdesignpatterns.com) and they support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields).
+Peak Forms live validate and submit using [Laravel Precognition](https://laravel.com/docs/10.x/precognition). The forms are designed around [Form Design Patterns](https://formdesignpatterns.com) (with a few exceptions) and they support the AlpineJS driven [conditional fields feature](https://statamic.dev/tags/form-create#conditional-fields).
+
+## Rendering
 
 Peak renders forms and mail templates dynamically so you can add as many forms as you'd like, just by creating them in the CP. They also support form sections you can create in the form blueprint builder. Peak ships with a default basic contact form you can edit using the following files:
 
@@ -13,6 +15,10 @@ Peak renders forms and mail templates dynamically so you can add as many forms a
 * `resources/lang/en/strings.php` Strings file containing the e-mail's localizable body contents and logo image location.
 
 The default contact form has a required consent field. The field handle is `consent`. Due to restraints the form template contains a conditional that depends on this specific handle name. Don't use it for other form fields.
+
+## Error handling
+
+According to Form Design Patterns its best to place error labels below the label and above an input field. This makes sense because error labels could be obscured when the user hasn't scrolled down yet. However in the case of Precognition, errors kick in on blur, so we can assume with most certainty that the user will see the error label. Placing them below the form field prevents jumpyness. To make sure users know when they've made mistakes, after submission they wel get focus on an error summary.
 
 ## Form handler
 The form handler view that is included in your form partial is part of the [Tools Addon](/getting-started/addons.html#tools). If you want to make changes to the views from this addon, you can publish them by running:
