@@ -14,7 +14,7 @@ Peak renders forms and mail templates dynamically so you can add as many forms a
 * `resources/lang/en.json`. Strings file containing the the form's localizable field labels.
 * `resources/lang/en/strings.php` Strings file containing the e-mail's localizable body contents and logo image location.
 
-The default contact form has a required consent field. The field handle is `consent`. Due to restraints the form template contains a conditional that depends on this specific handle name. Don't use it for other form fields.
+The default contact form has a consent field with its visibility set to `hidden`. This setting hides it from the publish form of stored submissions as well as from the email. Feel free to apply the same to other fields within your blueprint.
 
 ## Error handling
 
