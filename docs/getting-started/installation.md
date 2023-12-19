@@ -4,7 +4,7 @@
 
 The easiest way to install Statamic together with Peak is to use the [official CLI](https://github.com/statamic/cli). Install the CLI by running `composer global require statamic/cli` and for each project just run `statamic new my-site studio1902/statamic-peak`.
 
-The Peak install process uses Laravel Prompts. Some prompts are not properly support on Windows without WSL.
+> The Peak install process uses Laravel Prompts. Some prompts are *not properly support on Windows without WSL* and will be skipped. This means during the setup process Peak cannot set a timezone for your app. The [Commands Addon](/getting-started/commands.html) won't offer you to pick an icon when adding Page Builder Blocks or Bard Sets. Instead it will pick the first available icon. You can always change these manually in the Statamic Blueprint Builder.
 
 ## Install into an existing Statamic v3.3+ project
 
