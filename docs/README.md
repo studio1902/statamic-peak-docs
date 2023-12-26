@@ -24,7 +24,7 @@ features:
   - title: More
     details: Responsive images, browser appearance configuration, favicon generation, button system, dark mode support, forms and more.
 footer: '© Studio 1902'
-footerHTML: false
+footerHTML: true
 editLink: false
 lastUpdated: false
 contributers: false
