@@ -23,8 +23,8 @@ features:
     details: Tools that help you generate templates, page builder blocks or install whole presets onto your site.
   - title: More
     details: Responsive images, browser appearance configuration, favicon generation, button system, dark mode support, forms and more.
-footer: '© 2020 - 2023 | Studio 1902'
-footerHTML: true
+footer: '© Studio 1902'
+footerHTML: false
 editLink: false
 lastUpdated: false
 contributers: false
