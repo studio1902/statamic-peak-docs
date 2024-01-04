@@ -6,7 +6,7 @@
 ## Install Presets
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/mEAM1h1glN8' frameborder='0' allowfullscreen></iframe></div>
 
-## New Cookie Banner features
+## New Consent Banner features
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/nkvPPX2hgH8' frameborder='0' allowfullscreen></iframe></div>
 
 ## Add Page Builder Block

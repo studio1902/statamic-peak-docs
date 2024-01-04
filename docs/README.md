@@ -18,7 +18,7 @@ features:
   - title: Page builder
     details: This kit features a very extendible page builder using native Statamic fields, including Bard for long form content.
   - title: SEO
-    details: Peak comes with full blown professional SEO support including various tracker support, a built in GDPR compliant cookie banner and generating social images.
+    details: Peak comes with full blown professional SEO support including various tracker support, a built in GDPR compliant consent banner and generating social images.
   - title: Tooling
     details: Tools that help you generate templates, page builder blocks or install whole presets onto your site.
   - title: More

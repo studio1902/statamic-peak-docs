@@ -27,22 +27,22 @@ And edit the files you want to make changes to in `resources/views/vendor/statam
 * Knowledge graph data (organization, person or custom).
 * JSON-ld breadcrumbs.
 * Trackers: Google Analytics, Google Tag Manager, Site Verification, Fathom or Cloudflare Web Analytics.
-* Cookie Consent Banner.
+* Consent Banner.
 
 > Note: by default only `superusers` and the `marketeer` role get access to the SEO global configuration.
 
-## GDPR Compliant Cookie Banner
+## GDPR Compliant Consent Banner
 
-When you use Google Analytics or Google Tag Manager you can enable the cookie consent banner to comply with GPDR. The consent banner uses Google's Consent API so you might need to properly set this up in your GTM/Analytics settings.
+When you use Google Analytics or Google Tag Manager you can enable the consent banner to (somewhat) comply with GPDR. The consent banner uses Google's Consent API v2 so you might need to properly set this up in your GTM/Analytics settings. Users can specify the type of consent they give. When consent is given, gtag/gtm will be updated with the new consent configuration.
 
-Users can specify the type of consent they give (analytics, marketing or both). When consent is given a link will be added to the footer for users to reset their consent.
+The consent banner only blocks Google scripts since it uses the consent API, so if you really want to be a marketing-script-abuser and bug your users with a Facebook pixel or Hotjar, you can be (somewhat) GDPR compliant by running all those scripts through GTM.
 
-The cookie banner only blocks Google scripts since it uses the consent API, so if you really want to be a marketing-script-abuser and bug your users with a Facebook pixel or Hotjar, you can be GDPR compliant by running all those scripts through GTM.
+When consent has been given, a link will be added to the footer for users to reset their consent.
 
-> Note: tracking and cookie consent by default only work on the `production` environment. However you can tweak this from the `SEO` global.
+> Note: tracking and consent by default only work on the `production` environment. However you can tweak this from the `SEO` global.
 
 ## Scripts and consent
 
 If you don't use any form of Google tracking: great job! You can still load in scripts. Set the `Tracker type` to `Scripts` and add your scripts by adding script fragments. The scripts will be loaded in the document head on page load.
 
-When you turn on the cookie banner they will be injected using Javascript only when the user has given consent.
+When you turn on the consent banner they will be injected using Javascript only when the user has given consent.
