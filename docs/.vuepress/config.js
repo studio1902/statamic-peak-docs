@@ -61,6 +61,7 @@ module.exports = {
             '/features/bard.md',
             '/features/browser-appearance.md',
             '/features/buttons.md',
+            '/features/fluid-grid.md',
             '/features/forms.md',
             '/features/globals.md',
             '/features/images.md',
