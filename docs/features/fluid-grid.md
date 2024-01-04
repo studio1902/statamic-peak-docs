@@ -46,6 +46,8 @@ You can alter the custom properties `--col-gap` and `--max-width` to adapt the g
 ## Placing items on the grid
 You can use custom utilities or arbitrary values to place items on the grid. E.g: `md:col-start-[col-3] md:col-span-8` to let an item start on column 3 and span for 8 columns.
 
+> Make sure to check the installable page builder blocks from the [Commands Addon](getting-started/commands.html#install-page-builder-block) for inspiration.
+
 The following utilities are also present to use for spanning items on the grid. By default those are used on Bard sets like: text, image, table, video and pull quote and they can be customised on a per-site basis.
 
 ```css
