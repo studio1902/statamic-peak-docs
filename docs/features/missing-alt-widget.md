@@ -19,6 +19,6 @@ php artisan vendor:publish --tag="statamic-peak-tools-views"
 
 ## Caching
 
-When your site has a lot of assets, fetching all assets can have a negative impact on the performance of your dashboard. Therefore the assets only get3 fetched once and will be cached indefinitely. As soon as an asset gets deleted, edited or uploaded, a job will be dispatched to refetch the cache. This job will be queued when using a queue driver like Redis. This is recommended on production.
+When your site has a lot of assets, fetching all assets can have a negative impact on the performance of your dashboard. Therefore the assets only gets fetched once and will be cached indefinitely. As soon as an asset gets deleted, edited or uploaded, a job will be dispatched to refetch the cache. This job will be queued when using a queue driver like Redis. This is recommended on production.
 
 Thanks to [Novu](https://statamic.com/addons/novu/images-missing-alt) for the caching strategy.
