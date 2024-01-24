@@ -46,3 +46,7 @@ When consent has been given, a link will be added to the footer for users to res
 If you don't use any form of Google tracking: great job! You can still load in scripts. Set the `Tracker type` to `Scripts` and add your scripts by adding script fragments. The scripts will be loaded in the document head on page load.
 
 When you turn on the consent banner they will be injected using Javascript only when the user has given consent.
+
+## Local store
+
+All consent types and script are saved in the visitors localStorage. In order for any changes you make to be seen by folks who already visited your site and possibly have given consent, you have to revoke the users consent by setting a revoke date in the banner configuration panel. This make sure the localStorage for users gets cleared and the banner reappears. 
