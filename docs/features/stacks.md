@@ -33,3 +33,5 @@ It would compile to the following CSS.
 ```
 
 You can also use arbitrary values and modifiers like `stack-[5px] md:stack-16`. These utilities can of course also be used outside of page builder blocks.
+
+Read more on stacks in [this post](https://1902.studio/journal/stack-utilities-to-space-page-builder-blocks).

@@ -104,3 +104,5 @@ With subgrid you could use:
 ```
 
 > You can use the `fluid-grid-gap` everywhere. For example with stacks: `stack-fluid-grid-gap` or margins: `mb-fluid-grid-gap`.
+
+Read more on the fluid grid in [this post](https://1902.studio/en/journal/a-fluid-grid-to-layout-page-builder-blocks).
