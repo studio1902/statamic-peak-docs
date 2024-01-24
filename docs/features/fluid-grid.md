@@ -88,7 +88,7 @@ The Custom Property `col-gap` is added to the Tailwind spacing scale so you can 
 ```html
 <section class="fluid-grid">
     <div class="span-content grid grid-cols-12 gap-fluid-grid-gap">
-        // Children will fall on a new 12 column element that aligns with the parent fluid grid.
+        Children will fall on a new 12 column element that aligns with the parent fluid grid.
     </div>
 </section>
 ```
@@ -98,7 +98,7 @@ With subgrid you could use:
 ```html
 <section class="fluid-grid">
     <div class="span-content grid grid-cols-subgrid">
-        // Children will fall on a new 12 column element that aligns with the parent fluid grid using subgrid.
+        Children will fall on a new 12 column element that aligns with the parent fluid grid using subgrid.
     </div>
 </section>
 ```
