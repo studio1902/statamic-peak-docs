@@ -21,7 +21,7 @@ This is how you use them.
 It would compile to the following CSS.
 
 ```css
-.stack-16 {
+.stack-16 > * {
     --stack-space: 4rem/* 64px */;
 }
 .stack-16 > *:not(.no-space-y, .no-space-b) + *:not(.no-space-y, .no-space-t) {
