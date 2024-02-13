@@ -54,10 +54,12 @@ export default defineConfig(({ mode }) => {
             }),
             (() => {
                 return useBrowserSync ? VitePluginBrowserSync({
-                    bs: {
-                        proxy: url,
-                        notify: false,
-                        open: 'external',
+                    dev: {
+                        bs: {
+                            proxy: url,
+                            notify: false,
+                            open: 'external',
+                        },
                     },
                 }) : null;
             })()
