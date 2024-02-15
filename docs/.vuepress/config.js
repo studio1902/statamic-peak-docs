@@ -25,6 +25,10 @@ module.exports = {
       logo: './visuals/statamic-peak-logo.svg',
       navbar: [
         {
+          text: 'Support',
+          link: 'https://1902.studio/en/peak-support'
+        },
+        {
           text: 'Sponsor',
           link: 'https://github.com/sponsors/studio1902'
         },
