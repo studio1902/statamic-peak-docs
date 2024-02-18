@@ -1,6 +1,6 @@
 # Commands
 
-Peak comes with a set of CLI commands to make tedious recurring tasks a lot easier.
+Peak comes with an optional Paid addon containing a set of CLI commands to make tedious recurring tasks a lot easier.
 
 ## Add Collection
 This command creates a new collection and scaffolds out all needed files with some sane default markup containing the various Peak utilities we use.
