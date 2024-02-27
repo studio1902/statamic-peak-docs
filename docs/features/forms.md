@@ -18,7 +18,7 @@ The default contact form has a consent field with its visibility set to `hidden`
 
 ## Error handling
 
-According to Form Design Patterns its best to place error labels below the label and above an input field. This makes sense because error labels could be obscured when the user hasn't scrolled down yet. However in the case of Precognition, errors kick in on blur, so we can assume with most certainty that the user will see the error label. Placing them below the form field prevents jumpyness. To make sure users know when they've made mistakes, after submission they wel get focus on an error summary.
+According to Form Design Patterns its best to place error labels below the label and above an input field. This makes sense because error labels could be obscured when the user hasn't scrolled down yet. However in the case of Precognition, errors kick in on blur, so we can assume with most certainty that the user will see the error label. Placing them below the form field prevents jumpyness. To make sure users know when they've made mistakes, after submission they will get focus on an error summary.
 
 ## Form handler
 The form handler view that is included in your form partial is part of the [Tools Addon](/getting-started/addons.html#tools). If you want to make changes to the views from this addon, you can publish them by running:
