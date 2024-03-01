@@ -90,7 +90,7 @@ module.exports = {
             '/other/awesome.md',
             '/other/custom-fonts.md',
             '/other/deployment-script.md',
-            '/other/focus-visible.md',
+            '/other/focus-outlines.md',
             '/other/lighthouse.md',
             '/other/localization.md',
             '/other/oklch.md',
