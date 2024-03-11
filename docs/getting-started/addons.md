@@ -18,7 +18,7 @@ php artisan vendor:publish --tag="statamic-peak-browser-appearance-views"
 > Note: When using the Eloquent Driver make sure you store blueprints and fieldsets as files and not in the database.
 
 ## Commands
-The optional paid Commands addon contains the various [Peak CLI commands](/getting-started/commands.html) that help speed up development. Make sure to read up on them before starting your project.
+The optional paid Commands addon contains the various [Peak CLI commands](/getting-started/commands.html) that help speed up development. Make sure to read up on them before starting your project. This addon requires an active license during development.
 
 Run the following commands to publish the addons stubs.
 
