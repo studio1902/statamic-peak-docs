@@ -24,3 +24,7 @@ Or to do fancy Alpine stuff:
     {{ /slot:attributes }}
 {{ /partial:components/button }}
 ```
+
+## Tiggering events
+
+The button fieldset has an `event` field that only shows when you use GTM, GTAG or Fathom as a Tracker. You can enter the name of your event in the field and it will automatically trigger and register when a user clicks your button.
