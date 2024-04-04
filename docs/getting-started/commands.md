@@ -80,11 +80,14 @@ These are the presets available:
 * **Breadcrumbs**: A breadcrumbs partial using schema markup.
 * **Business hours**: A business hours global and a list and call component that shows the business hours and if the business is currently open / available.
 * **Clients**: A routeless renamable client/partner collection with a logo cloud page builder block.
-* **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder set.
-* **FAQ**: A FAQ collection with a page builder set (including JSON-ld).
+* **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder block.
+* **FAQ**: A FAQ collection with a page builder block (including JSON-ld).
+* **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Language picker**: A language picker for when you use multisite.
 * **Modal**: A modal that only has to be rendered once but can be used multiple times with different content.
-* **News**: A dated news collection with index and show templates (including JSON-ld) and a page builder set.
+* **News**: A dated news collection with index and show templates (including JSON-ld) and a page builder block.
+* **Pricing tiers & features**: Create and list prcicing tiers and a composable feature matrix.
 * **Search**: A search form component and a styled search results template.
+* **Team members**: A renamable team member collection with a page builder block.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
