@@ -26,5 +26,8 @@ For example if you add a fieldset to the `page_builder.yaml` with the handle `ca
 
 Alternatively you can use the generate block command in Peak. Run `php please peak:add-block` and follow the instrutions by filling in a name, a filename and a fieldset instruction. All the files needed will be generated and the block will be added to the `page_builder.yaml` file.
 
+## Block partial
+All page builder blocks extend the `resources/views/page_builder/_block.antlers.html` partial so you only have to add site wide styling for blocks in one partial. All block content will be slotted into this partial.
+
 ## Installing blocks
 You can install premade blocks using the [install block command](/getting-started/commands.html#install-page-builder-block). Peak ships with a bunch of premade blocks you can style yourself.
