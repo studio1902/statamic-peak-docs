@@ -6,7 +6,7 @@ The easiest way to install Statamic together with Peak is to use the [official C
 
 > The Peak install process uses Laravel Prompts. Some prompts are *not properly support on Windows without WSL* and will be skipped. This means during the setup process Peak cannot set a timezone for your app. The [Commands Addon](/getting-started/commands.html) won't offer you to pick an icon when adding Page Builder Blocks or Bard Sets. Instead it will pick the first available icon. You can always change these manually in the Statamic Blueprint Builder.
 
-## Install into an existing Statamic v3.3+ project
+## Install into an existing Statamic v5 project
 
 If you already have an existing, clean, Statamic installation you can run the following command: `php please starter-kit:install studio1902/statamic-peak`.
 
