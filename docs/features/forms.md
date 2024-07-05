@@ -35,3 +35,11 @@ You can pass in an argument to the form handler as a success hook. For example: 
 ```
  {{ partial:statamic-peak-tools::snippets/form_handler success_hook="console.log('Hurray!')" }}
 ```
+
+By design, there is a default success hook in place, which resets the `success` variable after 4.5 seconds, even if you pass a custom success hook. If you want to skip that or override that behaviour, simply pass a success hook with a `return` statement.
+
+```
+ {{ partial:statamic-peak-tools::snippets/form_handler success_hook="console.log('Hurray!'); return" }}
+```
+
+This will log "Hurray!" into your browser console and skip the default success hook.
