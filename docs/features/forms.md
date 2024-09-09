@@ -60,4 +60,4 @@ When you want to populate a hidden field with custom data, you can add the follo
  <div x-init="form.hidden_field_handle = 'value', form.validate('hidden_field_handle')"></div>
 ```
 
-This will make sure that your hidden fields gets populated with the data you want and added to the precognition request. 
+This will make sure that your hidden fields gets populated with the data you want and added to the precognition request. When the value comes from Alpine and needs to be dynamic you can use `x-effect` instead. 
