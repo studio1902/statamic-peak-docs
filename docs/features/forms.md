@@ -43,3 +43,22 @@ By design, there is a default success hook in place, which resets the `success` 
 ```
 
 This will log "Hurray!" into your browser console and skip the default success hook.
+
+## Submit additional data
+
+If you want to submit additional data besides your form fields you can add an `x-data` attribute to the `form:create` tag that will be merged with the actual Alpine data object:
+
+```
+{{ form:create :in="form:handle" js="alpine:form" attr:x-ref="form" x-data='@{"field": "value" }' }}
+x-data='@{"product_id": "{ block:product:id }" }
+```
+
+## Hidden fields
+
+When you want to populate a hidden field with custom data, you can add the following within your `form:create` tag:
+
+```
+ <div x-init="form.hidden_field_handle = 'value', form.validate('hidden_field_handle')"></div>
+```
+
+This will make sure that your hidden fields gets populated with the data you want and added to the precognition request. 
