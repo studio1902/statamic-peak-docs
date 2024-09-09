@@ -50,7 +50,6 @@ If you want to submit additional data besides your form fields you can add an `x
 
 ```
 {{ form:create :in="form:handle" js="alpine:form" attr:x-ref="form" x-data='@{"field": "value" }' }}
-x-data='@{"product_id": "{ block:product:id }" }
 ```
 
 ## Hidden fields
