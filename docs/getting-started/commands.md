@@ -93,6 +93,7 @@ These are the presets available:
 * **Clients**: A routeless renamable client/partner collection with a logo cloud page builder block.
 * **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder block.
 * **FAQ**: A FAQ collection with a page builder block (including JSON-ld).
+* **Footer**: A mega footer with multiple navs.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Language picker**: A language picker for when you use multisite.
 * **Modal**: A modal that only has to be rendered once but can be used multiple times with different content.
