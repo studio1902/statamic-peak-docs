@@ -5,7 +5,7 @@ Peak comes with an optional Paid addon containing a set of CLI commands to make 
 ## Make Collection
 This command creates a new collection and scaffolds out all needed files with some sane default markup containing the various Peak utilities we use.
 
-Run `php please peak:make-collection` to:
+Run `php please peak:make:collection` to:
 
 * Create a collection in `content/collections/{handle}.yaml` with the variables you defined in the CLI.
 * Create a blueprint for collection in `resources/blueprints/collections/pages/{handle}.yaml` containing the page builder fieldset and the SEO tab when your collection has a public route defined.
@@ -17,7 +17,7 @@ Run `php please peak:make-collection` to:
 ## Make Page Builder Block
 This command adds a block to the Peak Page Builder and generates the files needed.
 
-Run `php please peak:make-block` to:
+Run `php please peak:make:block` to:
 
 * Pick a group to add the block to.
 * Add a set to the Page Builder replicator in `resources/fieldsets/page_builder.yaml`.
@@ -27,7 +27,7 @@ Run `php please peak:make-block` to:
 ## Make Page Builder Article Set
 This command adds a set to the Peak Page Builder Article (Bard) block and generates the files needed.
 
-Run `php please peak:make-set` to:
+Run `php please peak:make:set` to:
 
 * Pick a group to add the set to.
 * Add a set to the Article Bard in `resources/fieldsets/article.yaml`.
@@ -37,17 +37,17 @@ Run `php please peak:make-set` to:
 ## Make Partial
 With this command you can choose a type (component, layout, snippet or typography) and add a name and description. It will generate a partial with the proper IDE hinting and location comments.
 
-Run `php please peak:make-partial`.
+Run `php please peak:make:partial`.
 
 ## Make Global
 With this command you can generate a global with a blueprint and optionally grant edit permissions to the editor.
 
-Run `php please peak:make-global`.
+Run `php please peak:make:global`.
 
 ## Make Taxonomy
 With this command you can generate a taxonomy, term blueprint and optionally attach it to multiple collections.
 
-Run `php please peak:make-taxonomy`.
+Run `php please peak:make:taxonomy`.
 
 ## Clear site
 This command clears the default Peak content.
@@ -63,7 +63,7 @@ Run `php please peak:clear-site` to:
 ## Install Page Builder Block
 This command installs premade blocks to the Peak Page Builder and generates the files needed.
 
-Run `php please peak:install-block` to pick a block and:
+Run `php please peak:install:block` to pick a block and:
 
 * Add a set to the Page Builder replicator in `resources/fieldsets/page_builder.yaml`.
 * Create a fieldset for the installed block in `resources/fieldsets/{file_name}.yaml`.
@@ -84,7 +84,7 @@ These are the page builder blocks available:
 ## Install Preset
 This command installs full presets into Peak. A preset can be anything. A collection that installs the relevant blueprints, templates, configuration, pages and page builder blocks into your site or a simple navigation pattern or dark mode.
 
-Run `php please peak:install-preset` to pick a set.
+Run `php please peak:install:preset` to pick a set.
 
 These are the presets available:
 * **Banner**: A banner on top of your site users can click to hide.
