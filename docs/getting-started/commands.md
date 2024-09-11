@@ -45,7 +45,12 @@ With this command you can generate a global with a blueprint and optionally gran
 Run `php please peak:make:global`.
 
 ## Make Taxonomy
-With this command you can generate a taxonomy, term blueprint and optionally attach it to multiple collections.
+With this command you can generate a taxonomy, term blueprint, attach it to multiple collections and optionally grant edit permissions to the editor.
+
+Run `php please peak:make:taxonomy`.
+
+## Make Nav
+With this command you can generate a navigation, navigation blueprint, attach collections and optionally grant edit permissions to the editor.
 
 Run `php please peak:make:taxonomy`.
 
