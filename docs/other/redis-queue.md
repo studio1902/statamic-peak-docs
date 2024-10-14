@@ -8,4 +8,4 @@ Make sure you start a queue worker in Ploi or Forge for your current site. Got t
 
 Include `php artisan queue:restart` in your deploy script.
 
-Alternatively you could use [Laravel Horizon](https://1902.studio/journal/configuring-laravel-horizon-for-statamic-and-peak) to manage multiple queues and workers. 
+Alternatively, you could use [Laravel Horizon](https://1902.studio/journal/configuring-laravel-horizon-for-statamic-and-peak) to manage multiple queues and workers. 
