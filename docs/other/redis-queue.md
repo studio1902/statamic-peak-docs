@@ -7,3 +7,5 @@ Enable Redis by setting `QUEUE_CONNECTION=redis` in your `.env` file. By default
 Make sure you start a queue worker in Ploi or Forge for your current site. Got to the `Queue` tab for your site. Set `redis` as a connection instead of `database` and set the current `environment` to whatever your environment currently is: `staging` or `production` probably. Click `Add Queue` to start your worker.
 
 Include `php artisan queue:restart` in your deploy script.
+
+Alternatively, you could use [Laravel Horizon](https://1902.studio/journal/configuring-laravel-horizon-for-statamic-and-peak) to manage multiple queues and workers. 

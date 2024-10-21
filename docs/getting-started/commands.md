@@ -52,7 +52,7 @@ Run `php please peak:make:taxonomy`.
 ## Make Nav
 With this command you can generate a navigation, navigation blueprint, attach collections and optionally grant edit permissions to the editor.
 
-Run `php please peak:make:taxonomy`.
+Run `php please peak:make:nav`.
 
 ## Clear site
 This command clears the default Peak content.
