@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           text: 'Discord',
-          link: 'https://discord.gg/sW7KXWaucH'
+          link: 'https://discord.gg/x3MNSH3nMz'
         },
         {
           text: 'Changelog',
