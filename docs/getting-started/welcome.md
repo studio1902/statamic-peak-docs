@@ -21,4 +21,4 @@ Maintaining Peak demands a lot of my time and it probably saves you a lot. Your 
   </a>
 </div>
 
-The Peak branding is done by Jouke Zult from [Merkactivisten](https://merkactivisten.nl). Thank you so much!
+The Peak branding is done by Jouke Zult from [Studio Salto](https://studiosalto.nl). Thank you so much!
