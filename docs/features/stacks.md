@@ -37,4 +37,4 @@ You can also use arbitrary values and modifiers like `stack-[5px] md:stack-16`. 
 Read more on stacks in [this post](https://1902.studio/journal/stack-utilities-to-space-page-builder-blocks).
 
 ## Collapse
-If two siblings with the class `stack-collapse` follow each other in a stack, their margins will collapse.
+If two siblings with the class `stack-space-collapse` follow each other in a stack, their margins will collapse.
