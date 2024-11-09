@@ -109,3 +109,16 @@ These are the presets available:
 * **Team members**: A renamable team member collection with a page builder block.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
+
+## Install Set
+This command installs premade sets to the Article (Bard) field and generates the files needed.
+
+Run `php please peak:install:set` to pick a set and:
+
+* Add a set to the Page Builder Article Bard field in `resources/fieldsets/article.yaml`.
+* Create a fieldset for the installed set in `resources/fieldsets/{file_name}.yaml`.
+* Create a partial with bespoke markup in `resources/views/components/_{file_name}.antlers.html`.
+
+These are the page builder blocks available:
+* **Read more**: Link to a related article.
+* **Video self hosted**: Add a self hosted video.
