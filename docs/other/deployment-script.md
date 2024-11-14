@@ -5,7 +5,7 @@ You can use the following deployment scripts together with Peak to make sure eve
 ## Deploy script Ploi
 
 ```bash
-if [[ {COMMIT_MESSAGE} =~ "[BOT]" ]] && [[ {DEPLOYMENT_SOURCE} == "quick-deploy" ]]; then    
+if [[ {COMMIT_MESSAGE} =~ "[BOT]" ]] && [[ {DEPLOYMENT_SOURCE} == "quick-deploy" ]]; then
     echo "Automatically committed on production. Nothing to deploy."
     {DO_NOT_NOTIFY}
     exit 0
@@ -13,7 +13,7 @@ fi
 
 cd {SITE_DIRECTORY}
 git pull origin {BRANCH}
-composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+{SITE_COMPOSER} install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
 npm ci
 npm run build
