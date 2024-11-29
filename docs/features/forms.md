@@ -64,4 +64,4 @@ This will make sure that your hidden fields gets populated with the data you wan
 
 ## Captcha
 
-You can use Aryey Raber's wonderful [Captcha addon](https://statamic.com/addons/aryeh-raber/captcha) together with your Peak form. In order to make this work, follow the addons instructions and add `x-data='@{"captcha-response": "" }'` to your Peak `form:create` tag in `resources/views/page_builder/_form.antlers.html`. Lastly, make sure you run the latest versions of both the Peak Tools and the Captcha addons.
+You can use Aryeh Raber's wonderful [Captcha addon](https://statamic.com/addons/aryeh-raber/captcha) together with your Peak form. In order to make this work, follow the addons instructions and add `x-data='@{"captcha-response": "" }'` to your Peak `form:create` tag in `resources/views/page_builder/_form.antlers.html`. Lastly, make sure you run the latest versions of both the Peak Tools and the Captcha addons.
