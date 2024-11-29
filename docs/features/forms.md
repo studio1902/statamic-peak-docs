@@ -60,4 +60,8 @@ When you want to populate a hidden field with custom data, you can add the follo
  <div x-init="form.hidden_field_handle = 'value', form.validate('hidden_field_handle')"></div>
 ```
 
-This will make sure that your hidden fields gets populated with the data you want and added to the precognition request. When the value comes from Alpine and needs to be dynamic you can use `x-effect` instead. 
+This will make sure that your hidden fields gets populated with the data you want and added to the precognition request. When the value comes from Alpine and needs to be dynamic you can use `x-effect` instead.
+
+## Captcha
+
+You can use Aryeh Raber's wonderful [Captcha addon](https://statamic.com/addons/aryeh-raber/captcha) together with your Peak form. In order to make this work, follow the addons instructions and add `x-data='@{"captcha-response": "" }'` to your Peak `form:create` tag in `resources/views/page_builder/_form.antlers.html`. Lastly, make sure you run the latest versions of both the Peak Tools and the Captcha addons.
