@@ -41,12 +41,22 @@ When consent has been given, a link will be added to the footer for users to res
 
 > Note: tracking and consent by default only work on the `production` environment. However you can tweak this from the `SEO` global.
 
+## Revoking consent
+
+Users can revoke/change their consent by clicking on the link in the footer. The Consent Banner will reappear and consent will be automatically revoked.
+
+You can also configure a revoke consent date in the Consent Banner configuration which will revoke all users consent before this date and time. Use this when you changed consent settings, added scripts or changed trackers, or when your privacy policy has changed. The Consent Banner will reappear. This setting expects a time in the timezone configured for your application.
+
 ## Scripts and consent
 
 If you don't use any form of Google tracking: great job! You can still load in scripts. Set the `Tracker type` to `Scripts` and add your scripts by adding script fragments. The scripts will be loaded in the document head on page load.
 
-When you turn on the consent banner they will be injected using Javascript only when the user has given consent.
+When you turn on the consent banner they will be injected using Javascript only when the user has given consent. They will be removed from the DOM as soon as a user revokes their consent.
+
+## Embeds and consent
+
+If you enable embeds in the Consent Banner configuration, any YouTube video embeds added via the Video set in the Article (Bard) partial, will automatically be disabled until users give consent. You can add any partial behind a consent gate by wrapping your partials content into the `{{ partial:components/consent_gate }}` partial. See `resources/views/components/_video.antlers.html` and `resources/views/components/_consent_gate.antlers.html` for an example.
 
 ## Local store
 
-All consent types and script are saved in the visitors localStorage. In order for any changes you make to be seen by folks who already visited your site and possibly have given consent, you have to revoke the users consent by setting a revoke date in the banner configuration panel. This make sure the localStorage for users gets cleared and the banner reappears. 
+All consent types and script are saved in the visitors localStorage. In order for any changes you make to be seen by folks who already visited your site and possibly have given consent, you have to revoke the users consent by setting a revoke date in the banner configuration panel. This make sure the localStorage for users gets cleared and the banner reappears.
