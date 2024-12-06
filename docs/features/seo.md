@@ -55,7 +55,7 @@ When you turn on the consent banner they will be injected using Javascript only 
 
 ## Embeds and consent
 
-If you enable embeds in the Consent Banner configuration, any YouTube video embeds added via the Video set in the Article (Bard) partial, will automatically be disabled until users give consent. You can add any partial behind a consent gate by wrapping your partials content into the `{{ partial:components/consent_gate }}` partial. See `resources/views/components/_video.antlers.html` and `resources/views/components/_consent_gate.antlers.html` for an example.
+If you enable embeds in the Consent Banner configuration, any YouTube video embeds added via the Video set in the Article (Bard) partial, will automatically be disabled until users give consent. You can add any partial behind a consent gate by wrapping your partials content into the `partial:components/consent_gate` partial. See `resources/views/components/_video.antlers.html` and `resources/views/components/_consent_gate.antlers.html` for an example.
 
 ## Local store
 
