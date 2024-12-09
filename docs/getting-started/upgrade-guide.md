@@ -8,7 +8,7 @@ If you want to upgrade existing Peak projects to Tailwind 4 and Vite 6, make sur
 * Remove the packages: `autoprefixer`, and `postcss-import`. Similar functionality is now ships with Tailwind.
 * Update your `postcss.config.js` to replace `postcss-import`, `tailwindcss` and `autoprefixer` with just: `'@tailwindcss/postcss'`.
 * Update your `resources/css/site.css` to [this](https://github.com/studio1902/statamic-peak/blob/main/export/resources/css/site.css) and use your own configuration from your `tailwind.config.site.js`.
-* Move over any CSS you've added from `resources/css/tailwind.css` to `resources/css.site.css` and trash the original file.
+* Move over any CSS you've added from `resources/css/tailwind.css` to `resources/site.css` and trash the original file.
 * Create `resources/css/peak.css` with [this content](https://github.com/studio1902/statamic-peak/blob/main/export/resources/css/peak.css).
 * Create `resources/css/typography.css` with [this content](https://github.com/studio1902/statamic-peak/blob/main/export/resources/css/typography.css) and use your own configuration from your `tailwind.config.typography.js`.
 * Create `resources/js/tailwind.peak.js` with [this content](https://github.com/studio1902/statamic-peak/blob/main/export/resources/js/tailwind.peak.js).
