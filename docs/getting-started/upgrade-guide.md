@@ -2,8 +2,6 @@
 
 ## Tailwind 3.4 to 4.0
 
-Together with the Tailwind migration in Peak, Statamic got a major update in how it handles starter kits. Because of this, but mostly because of my horrible Git hygienem, the PR got a bit messy.
-
 If you want to upgrade existing Peak projects to Tailwind 4 and Vite 6, make sure to take care of the following:
 
 * Run `npm install tailwindcss@next @tailwindcss/vite@next`
