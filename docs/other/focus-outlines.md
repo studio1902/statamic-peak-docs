@@ -1,6 +1,6 @@
 # Focus outlines
 
-The default focus styles are defined in `tailwind.config.site.js`. You can change the following custom properties to alter focus appearance:
+The default focus styles are defined in `resources/css/peak.css`. You can change the following custom properties to alter focus appearance:
 
 * --focus-outline-width: 2px
 * --focus-outline-offset: 3px

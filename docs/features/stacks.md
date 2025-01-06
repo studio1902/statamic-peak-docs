@@ -1,6 +1,6 @@
 # Stacks
 
-To position page builder blocks Peak uses stacks. These are custom utilities defined in `tailwind.config.peak.js` that are similar to space-y-* but with a few superpowers. Basically items that are preceded by a sibling get a margin top. You can override this on a child (block) level by using:
+To position page builder blocks Peak uses stacks. These are custom utilities defined in `resources/js/tailwind.peak.js` that are similar to space-y-* but with a few superpowers. Basically items that are preceded by a sibling get a margin top. You can override this on a child (block) level by using:
 
 * `no-space-t`: removes top margin.
 * `no-space-b`: removes top margin from next sibling.

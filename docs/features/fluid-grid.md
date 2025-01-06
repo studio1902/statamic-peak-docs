@@ -1,6 +1,6 @@
 # Fluid grid
 
-The custom `fluid-grid` component is used to layout individual page builder blocks and can be used together with the [Stack](/features/stacks.md) utilities. Stacks take care of vertical spacing and this new fluid grid handles horizontal spacing on a block level. The component is defined in `tailwind.config.peak.js`.
+The custom `fluid-grid` component is used to layout individual page builder blocks and can be used together with the [Stack](/features/stacks.md) utilities. Stacks take care of vertical spacing and this new fluid grid handles horizontal spacing on a block level. The component is defined in `resources/css/peak.css`.
 
 The fluid grid is a horizontal block that spans from browser edge to browser edge to give you the ability to create full bleed containers or something in between. For example an image that has to start somewhere within the middle your content area but extends to the browser edge. The center of the grid is your content area divided into 12 columns.
 

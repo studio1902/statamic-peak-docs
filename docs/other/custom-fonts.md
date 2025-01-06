@@ -55,36 +55,11 @@ Vite will serve those fonts when running `npm run dev`. When you run `npm run bu
 > Note that all font-family share the same name. It's just the properties (weight and style) that change according to the font file being used.
 
 ## Configure Tailwind CSS
-The default Peak Tailwind CSS configuration assumes you might want to use custom fonts so it's easier to implement them. Let's say our font `awesome` is a sans-serif font and it's the only font we're currently using. The relevant part of the configuration in `tailwind.config.site.js` would look like this:
+The default Peak Tailwind CSS configuration assumes you might want to use custom fonts so it's easier to implement them. Let's say our font `awesome` is a sans-serif font and it's the only font we're currently using. The relevant part of the configuration in `resources/css/site.css` would look like this:
 
-```js
-module.exports = {
-  theme: {
-    // Remove the font families you don't want to use.
-    fontFamily: {
-        sans: [
-        // Use a custom sans serif font for this site by changing 'Gaultier' to the
-        // font name you want and uncommenting the following line.
-        'awesome',
-        ...defaultTheme.fontFamily.sans,
-        ],
-    },
-    // The font weights available for this site.
-    fontWeight: {
-        // hairline: 100,
-        // thin: 200,
-        // light: 300,
-        normal: 400,
-        // medium: 500,
-        // semibold: 600,
-        bold: 700,
-        // extrabold: 800,
-        // black: 900,
-    },
-  }
-}
+```css
+--font-sans: Awesome, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 ```
-> Note that we *don't* extend the configuration here but rewrite it. That way we only have classes that actually belong to fonts we want to use.
 
 ## Using the fonts
-In your templates you can now use `font-serif` (with a fallback stack), `font-normal`, `font-bold`, `italic` and `not-italic`.
+In your templates you can now use `font-sans` (with a fallback stack), `font-normal`, `font-bold`, `italic` and `not-italic`.
