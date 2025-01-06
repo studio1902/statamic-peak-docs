@@ -24,7 +24,7 @@ For example if you add a fieldset to the `page_builder.yaml` with the handle `ca
 {{ block:field_name }}
 ```
 
-Alternatively you can use the generate block command in Peak. Run `php please peak:make:block` and follow the instrutions by filling in a name, a filename and a fieldset instruction. All the files needed will be generated and the block will be added to the `page_builder.yaml` file.
+Alternatively you can use the generate block command in Peak. Run `php please peak:make:block` and follow the instructions by filling in a name, a filename and a fieldset instruction. All the files needed will be generated and the block will be added to the `page_builder.yaml` file.
 
 ## Block partial
 All page builder blocks extend the `resources/views/page_builder/_block.antlers.html` partial so you only have to add site wide styling for blocks in one partial. All block content will be slotted into this partial.
