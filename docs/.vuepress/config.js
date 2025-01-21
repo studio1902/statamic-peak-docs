@@ -93,7 +93,6 @@ module.exports = {
             '/other/focus-outlines.md',
             '/other/lighthouse.md',
             '/other/localization.md',
-            '/other/oklch.md',
             '/other/protections.md',
             '/other/redis-queue.md',
             '/other/reduced-motion.md',
