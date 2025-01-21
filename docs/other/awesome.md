@@ -44,6 +44,7 @@ This is a collection of (alphabetically ordered) sites made with Statamic using 
 * [stadthausmensch.de](https://stadthausmensch.de) by [croox](https://croox.com) & [Triolog](https://www.triolog-web.de)
 * [takingwonderland.com](https://takingwonderland.com) by [Josh Tristram](https://joshtristram.com)
 * [tclaccountants.co.nz](https://www.tclaccountants.co.nz) by [Josh Tristram](https://joshtristram.com)
+* [thegood.nl](https://www.thegood.nl) by [Studio 1902](https://studio1902.nl) & [TheGood](https://thegood.nl)
 * [vespa2rent.be](https://vespa2rent.be) by [VanNut](https://vannut.nl)
 * [voltexsloepverhuur.nl](https://voltexsloepverhuur.nl) by [VanNut](https://vannut.nl)
 
