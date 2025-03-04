@@ -4,6 +4,6 @@ Right now, convicted felon Donald Trump and his fascist-saluting side-kick Musk 
 
 Their actions spill beyond America and expose the world to significant risk. Speak up and take action now! Not sure how? You have the power to stop helping them spread their propaganda: quit X, sell your Tesla and don’t use Starlink.
 
-Fighting fascism is not radical, it’s necessary.
+Fighting fascism is not radical, it’s necessary. [Read more here](https://1902.studio/en/journal/stop-fascism). 
 
 [Get started with Peak](/getting-started/welcome.html).
