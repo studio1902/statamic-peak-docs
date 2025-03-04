@@ -44,6 +44,10 @@ module.exports = {
       repo: 'studio1902/statamic-peak',
       sidebar: [
         {
+          text: 'Stop fascism',
+          link: '/stop-fascism.md',
+        },
+        {
           text: 'Getting started',
           link: '/getting-started/welcome.md',
           children: [

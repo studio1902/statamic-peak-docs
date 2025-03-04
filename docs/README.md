@@ -8,7 +8,7 @@ heroText: Start out on top
 tagline: A Statamic Starter Kit
 actions:
   - text: Get Started
-    link: /getting-started/welcome.html
+    link: /stop-fascism.html
     type: primary
 features:
   - title: For bespoke websites
