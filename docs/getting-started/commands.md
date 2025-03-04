@@ -101,6 +101,7 @@ These are the presets available:
 * **Footer**: A mega footer with multiple navs.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Language picker**: A language picker for when you use multisite.
+* **Mega Menu**: A three level deep mega dropdown menu.
 * **Modal**: A modal that only has to be rendered once but can be used multiple times with different content.
 * **News**: A dated news collection with index and show templates (including JSON-ld) and a page builder block.
 * **Pricing tiers & features**: Create and list prcicing tiers and a composable feature matrix.

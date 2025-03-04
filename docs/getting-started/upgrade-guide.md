@@ -6,7 +6,7 @@ If you want to upgrade existing Peak projects to Tailwind 4 and Vite 6, make sur
 
 * Remove the tailwind config preset files from `tailwind.config.js` to prevent the migrator from running into errors.
 * Update vite within your `package.json` to `"vite": "^6.0"`, and the Laravel Vite plugin to `"laravel-vite-plugin": "^1.1"`.
-* Run `npx @tailwindcss/upgrade@next @tailwindcss/vite@next` and follow all steps.
+* Run `npx @tailwindcss/upgrade@next` and follow all steps.
 * Update your `resources/css/site.css` to [this](https://github.com/studio1902/statamic-peak/blob/main/export/resources/css/site.css) and use your own configuration from your `tailwind.config.site.js`.
 * Delete `resources/css/tailwind.css` if you weren't using it before.
 * Create `resources/css/peak.css` with [this content](https://github.com/studio1902/statamic-peak/blob/main/export/resources/css/peak.css).
