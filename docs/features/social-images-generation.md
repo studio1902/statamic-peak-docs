@@ -28,6 +28,13 @@ Depending on your setup, node or npm might be not directly available to Browsers
 
 If you want to use a custom Chrome path you can configure this with the `SOCIAL_IMAGE_CHROME_PATH` variable in your `.env`.
 
+## Customize images
+
+You can customize images using the following environmental variables:
+* `SOCIAL_IMAGE_FORMAT`: `jpg` or `png` (default).
+* `SOCIAL_IMAGE_RESOLUTION`: `1200x630` (default).
+* `SOCIAL_IMAGE_SELECTOR_ID`: `og` (default), the ID referenced in your OG templates. 
+
 ## Redis as queue driver
 
 > You can set the queue name by defining `SOCIAL_IMAGE_QUEUE_NAME` in your `.env` file.
