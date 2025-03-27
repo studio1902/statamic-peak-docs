@@ -93,7 +93,7 @@ Run `php please peak:install:preset` to pick a set.
 
 These are the presets available:
 * **Banner**: A banner on top of your site users can click to hide.
-* **Breadcrumbs**: A breadcrumbs partial using schema markup.
+* **Breadcrumbs**: A breadcrumbs partial.
 * **Business hours**: A business hours global and a list and call component that shows the business hours and if the business is currently open / available.
 * **Clients**: A routeless renamable client/partner collection with a logo cloud page builder block.
 * **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder block.
