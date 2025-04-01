@@ -64,4 +64,4 @@ During the Peak installation process you get offered an option to generate a Git
 * Every three months
 * Never, you trigger this manually on github.com
 
-Not that in order for this to work, you have to have configure your GitHub workflow permissions to read and write and allow GitHub actions to create and approve pull requests.
+Note that in order for this to work, you have to have configure your GitHub workflow permissions to read and write and allow GitHub actions to create and approve pull requests.
