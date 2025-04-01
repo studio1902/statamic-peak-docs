@@ -59,6 +59,7 @@ Peak ships with a README file you can use. It features:
 ## GitHub PR's with updates
 
 During the Peak installation process you get offered an option to generate a GitHub workflow file that automatically creates PR's with composer updates for you. You can configure the workflow to run:
+
 * Every week
 * Every month
 * Every three months
