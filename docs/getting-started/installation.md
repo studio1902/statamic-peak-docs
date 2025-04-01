@@ -24,7 +24,7 @@ Make sure you [update the Statamic CLI](https://github.com/statamic/cli#updating
 9. Excluding `public/build` from git.
 10. Excluding `users` from git.
 11. Excluding `storage/form` from git.
-12. Adding a GitHub workflow that does [PR's with updates]().
+12. Adding a GitHub workflow that does [PR's with updates](/getting-started/installation.html#github-pr-s-with-updates).
 13. Running `npm i`.
 14. Installing Browsershot, Image and Puppeteer for [generating social images](/features/social-images-generation.html).
 15. Install missing Laravel translation files using `laravel-lang/common`.
