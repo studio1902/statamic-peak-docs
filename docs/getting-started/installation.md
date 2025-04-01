@@ -13,16 +13,23 @@ If you already have an existing, clean, Statamic installation you can run the fo
 ## Installation options
 Make sure you [update the Statamic CLI](https://github.com/statamic/cli#updating-the-cli-tool) to v2.5 or newer to use this functionality. When Statamic installs the Starter Kit, Peak will offer a few options that make configuring your site easier. These include:
 
-1. Copy over the `.env.example` (recommended Peak config) to your `.env` whilst maintaining your `APP_KEY` and `APP_URL` and setting a custom `APP_NAME`.
-2. Using Imagick instead of GD as an image manipulation driver.
-3. Enabling `SAVE_CACHED_IMAGES`.
-4. Initialising a Git repo.
-5. Adding `/users` to `.gitignore` to avoid GDPR issues.
-6. Adding `/storage/forms` to `.gitignore` to avoid GDPR issues.
-7. Adding `/public/build` to `.gitignore` for when you compile assets on your server.
-8. Running `npm i`.
-9. Installing Browsershot and Puppeteer.
-10. Starring the Peak repo.
+1. Installing the paid [Peak Commands addon](/getting-started/commands.html).
+2. Copying over the `.env.example` (recommended Peak config) to your `.env`.
+3. Setting an app name.
+4. Setting your license key.
+5. Setting the default site locale.
+6. Enabling/disabling the debugbar.
+7. Using Imagick instead of GD as an image processor.
+8. Configuring a local mailer.
+9. Excluding `public/build` from git.
+10. Excluding `users` from git.
+11. Excluding `storage/form` from git.
+12. Adding a GitHub workflow that does [PR's with updates]().
+13. Running `npm i`.
+14. Installing Browsershot, Image and Puppeteer for [generating social images](/features/social-images-generation.html).
+15. Install missing Laravel translation files using `laravel-lang/common`.
+16. Starring the Peak repo.
+17. Standing up against fascism.
 
 ## Compile the frontend assets
 
@@ -48,3 +55,13 @@ Peak ships with a README file you can use. It features:
 * An example `.env.` for production.
 * Nginx configuration for static resource caching.
 * [Deploy scripts](/other/deployment-script.html) for Ploi and Forge.
+
+## GitHub PR's with updates
+
+During the Peak installation process you get offered an option to generate a GitHub workflow file that automatically creates PR's with composer updates for you. You can configure the workflow to run:
+* Every week
+* Every month
+* Every three months
+* Never, you trigger this manually on github.com
+
+Not that in order for this to work, you have to have configure your GitHub workflow permissions to read and write and allow GitHub actions to create and approve pull requests.
