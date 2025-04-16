@@ -21,5 +21,4 @@ However, you can encapsulate the value in `#` characters to use regular expressi
 
 For example, setting the field to `#^/promo(/.*)?$#` will match `mywebsite.com/promo`, `mywebsite.com/promo/new`, `mywebsite.com/promo/anything`, and any other url starting with `promo/`.
 
-> [!TIP]
 > The system first checks for direct matches, and only looks for regex matches if none were found; so if you have a redirect rule for `/promo`, it will take prescedent over `#^/promo(/.*)?$#` when you try to load `mywebsite.com/promo`.
