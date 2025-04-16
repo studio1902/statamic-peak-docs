@@ -12,3 +12,14 @@ The views and fieldsets that are being used to handle redirects are part of the 
 php artisan vendor:publish --tag="statamic-peak-seo-fieldsets"
 php artisan vendor:publish --tag="statamic-peak-seo-views"
 ```
+
+## Advanced Use
+
+By default, the `Old URL / Pattern` feld will match an exact URL: `/promo` -> `mywebsite.com/promo`.
+
+However, you can encapsulate the value in `#` characters to use regular expression ([regex](https://www.php.net/manual/en/function.preg-match.php "PHP documentation for the preg_match function used for regex matching.")) pattern matching.
+
+For example, setting the field to `#^/promo(/.*)?$#` will match `mywebsite.com/promo`, `mywebsite.com/promo/new`, `mywebsite.com/promo/anything`, and any other url starting with `promo/`.
+
+> [!TIP]
+> The system first checks for direct matches, and only looks for regex matches if none were found; so if you have a redirect rule for `/promo`, it will take prescedent over `#^/promo(/.*)?$#` when you try to load `mywebsite.com/promo`.
