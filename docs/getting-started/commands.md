@@ -123,3 +123,81 @@ Run `php please peak:install:set` to pick a set and:
 These are the page builder blocks available:
 * **Read more**: Link to a related article.
 * **Video self hosted**: Add a self hosted video.
+
+## Register custom content
+You can register your own custom (private) content for `blocks`, `sets` and `presets`. This way you can install internal content onto your sites that should be private. Follow these steps to do this:
+
+1. Publish the config file by running: `php artisan vendor:publish --tag=statamic-peak-commands-config`.
+2. Add paths to the arrays for either `blocks`, `sets` or `presets`.
+3. Make sure each block, set or preset is contained within a folder and contains a `config.php` using the following pattern.
+
+```php
+return [
+    'handle' => 'pricing',
+    'name' => 'Pricing tiers & features',
+    'description' => 'Create and list pricing tiers and feature tables.',
+    'operations' => [
+        // Adds the ability to rename a collection handle. Use `{{ handle }}` in your files.
+        [
+            'type' => 'rename'
+        ],
+        // Runs a custom CLI command.
+        [
+            'type' => 'run',
+            'command' => 'composer require vendor/package',
+            'processing_message' => 'Installing vendor/package',
+            'success_message' => 'Package installed.'
+        ],
+        // Copy a file, optionallly add the option to skip the operation.
+        [
+            'type' => 'copy',
+            'input' => 'source.file',
+            'output' => 'destination.file',
+            'skippable' => false // Default.
+        ],
+        // Update the page builder with a new block.
+        [
+            'type' => 'update_page_builder',
+            'block' => [
+                'name' => 'Title',
+                'instructions' => 'Instructions',
+                'icon' => 'icon',
+                'handle' => 'handle',
+            ]
+        ],
+        // Update Bard with a new set.
+        [
+            'type' => 'update_article_sets',
+            'block' => [
+                'name' => 'Title',
+                'instructions' => 'Instructions',
+                'icon' => 'icon',
+                'handle' => 'handle',
+            ]
+        ],
+        // Add permissions to role. Use `{{ handle }}` when working with a renamable collection.
+        [
+            'type' => 'update_role',
+            'role' => 'role_handle',
+            'permissions' => ['view {{ handle }} entries', 'edit {{ handle }} entries', 'create {{ handle }} entries', 'delete {{ handle }} entries', 'publish {{ handle }} entries', 'reorder {{ handle }} entries', 'edit other authors {{ handle }} entries', 'publish other authors {{ handle }} entries', 'delete other authors {{ handle }} entries']
+        ],
+        // Attach collections to navigation.
+        [
+            'type' => 'attach_collections_to_navigation',
+            'navigation' => 'handle',
+            'collections' => ['collection_handle_1', 'collection_handle_2']
+        ],
+        // Attach taxonomy to collections.
+        [
+            'type' => 'attach_taxonomy_to_collections',
+            'taxonomy' => 'handle',
+            'collections' => ['collection_handle_1', 'collection_handle_2']
+        ],
+        // Notify the user with a message in the CLI. The user has to hit enter to continue.
+        [
+            'type' => 'notify',
+            'content' => "All done."
+        ],
+    ]
+];
+```
