@@ -128,7 +128,7 @@ These are the page builder blocks available:
 You can register your own custom (private) content for `blocks`, `sets` and `presets`. This way you can install internal content onto your sites that should be private.
 
 ### Knowledge requirements
-Behind the surface, the commands run a bunch of `operations` behind the scenes. The addon ships with the following built-in operations:
+Behind the scene, the commands run a bunch of `operations`. The addon ships with the following built-in operations:
 
 - `attach_collections_to_navigation`
 - `attach_taxonomy_to_collections`
