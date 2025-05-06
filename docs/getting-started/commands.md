@@ -125,10 +125,10 @@ These are the page builder blocks available:
 * **Video self hosted**: Add a self hosted video.
 
 ## Extending
-You can register your own custom (private) content for `blocks`, `sets` and `presets`. This way you can install internal content onto your sites that should be private.
+You can register your own custom (private) content for `blocks`, `sets` and `presets`. This way you can install internal content onto your sites.
 
 ### Knowledge requirements
-Behind the scene, the commands run a bunch of `operations`. The addon ships with the following built-in operations:
+Behind the scenes, the commands run a bunch of `operations`. The addon ships with the following built-in operations:
 
 - `attach_collections_to_navigation`
 - `attach_taxonomy_to_collections`
@@ -141,8 +141,7 @@ Behind the scene, the commands run a bunch of `operations`. The addon ships with
 - `update_page_builder`
 - `update_role`
 
-The built-in operations all live in the pre-registered `namespace` (`\Studio1902\PeakCommands\Operations`). 
-In case you need more than the listed operations above, you can register your own namespace and build out your custom operations there.
+The built-in operations all live in the pre-registered `namespace` (`\Studio1902\PeakCommands\Operations`). In case you need more than the listed operations above, you can register your own namespace and build out your custom operations there.
 
 When building your own operation, make sure to extend the `Studio1902\PeakCommands\Operations\Operation` class, which ensures your operation gets picked up correctly by the commands.
 
@@ -150,7 +149,7 @@ When building your own operation, make sure to extend the `Studio1902\PeakComman
 To install your custom content, follow these steps:
 
 1. Publish the config file by running: `php artisan vendor:publish --tag=statamic-peak-commands-config`.
-2. Add paths to the arrays for either `blocks`, `sets` or `presets`.
+2. Add paths to the arrays in the config file for either `blocks`, `sets` or `presets`.
 3. Make sure each block, set or preset is contained within a folder and contains a `config.php` using the following pattern (note, you can specify `type` as snake-cased or fully qualified class name).
 
 ```php
@@ -225,8 +224,7 @@ return [
 ```
 
 ### Programmatic configuration
-In some scenarios, publishing the addon config might feel wrong. For example, you want to build your own suite of custom blocks, presets and sets and want to distribute those via an internal addon. 
-Additionally, you need to ship some custom operations that are used in one of your presets. In that case you can configure the commands addon with the `Registry` facade.
+In some scenarios, publishing the addon config might feel wrong. For example, you want to build your own suite of custom blocks, presets and sets and want to distribute those via an internal addon. Additionally, you might need to ship some custom operations that are used in one of your presets. In that case you can configure the commands addon with the `Registry` facade.
 
 The available methods are:
 - `Registry::getPaths()`
@@ -249,7 +247,7 @@ use \Studio1902\PeakCommands\Facades\Registry;
 public fuction bootAddon(){
     // Registers the namespace for your own operations
     Registry::prependNamespace('\Acme\YourAddon\Operations');
-    
+
     // Registers a path for your own presets
     Registry::addPresetsPath(base_path('vendor/acme/your_addon/resources/presets'));
 }
