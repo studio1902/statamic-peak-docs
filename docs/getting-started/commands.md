@@ -104,9 +104,10 @@ These are the presets available:
 * **Mega Menu**: A three level deep mega dropdown menu.
 * **Modal**: A modal that only has to be rendered once but can be used multiple times with different content.
 * **News**: A dated news collection with index and show templates (including JSON-ld) and a page builder block.
+* **Password protection**: Protect pages with a password.
 * **Pricing tiers & features**: Create and list prcicing tiers and a composable feature matrix.
-* **Read more**: A read more set for Bard.
 * **Search**: A search form component and a styled search results template.
+* **Secure downloads**: Offer secure downloads.
 * **Team members**: A renamable team member collection with a page builder block.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
