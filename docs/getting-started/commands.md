@@ -99,6 +99,7 @@ These are the presets available:
 * **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder block.
 * **FAQ**: A FAQ collection with a page builder block (including JSON-ld).
 * **Footer**: A mega footer with multiple navs.
+* **Hero**: A hero layout component.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Language picker**: A language picker for when you use multisite.
 * **Mega Menu**: A three level deep mega dropdown menu.
@@ -109,6 +110,7 @@ These are the presets available:
 * **Search**: A search form component and a styled search results template.
 * **Secure downloads**: Offer secure downloads.
 * **Team members**: A renamable team member collection with a page builder block.
+* **Testimonials**: A renamable testimonial collection.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
 
