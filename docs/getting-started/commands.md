@@ -102,6 +102,7 @@ These are the presets available:
 * **Hero**: A hero layout component.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Language picker**: A language picker for when you use multisite.
+* **Links**: A LinkTree type blueprint and template.
 * **Lottie player**: A Lottie animation player.
 * **Mega Menu**: A three level deep mega dropdown menu.
 * **Modal**: A modal that only has to be rendered once but can be used multiple times with different content.
