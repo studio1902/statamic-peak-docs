@@ -92,6 +92,7 @@ This command installs full presets into Peak. A preset can be anything. A collec
 Run `php please peak:install:preset` to pick a set.
 
 These are the presets available:
+* **Availability**: A global and availability component.
 * **Banner**: A banner on top of your site users can click to hide.
 * **Breadcrumbs**: A breadcrumbs partial.
 * **Business hours**: A business hours global and a list and call component that shows the business hours and if the business is currently open / available.
