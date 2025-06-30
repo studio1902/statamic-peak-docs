@@ -2,14 +2,14 @@
 
 > You need to manually enable this feature.
 
-Peak can generate your social sharing images (OG and Twitter) and add them to your entries. To use this feature you need to [install Browsershot](https://github.com/spatie/browsershot) and its dependencies. A big thanks to [Spatie](http://spatie.be) and [Puppeteer](https://github.com/puppeteer/puppeteer/)!
+Peak can generate your social sharing images (OG) and add them to your entries. This feature uses [Browsershot](https://github.com/spatie/browsershot) and its dependencies. A big thanks to [Spatie](http://spatie.be) and [Puppeteer](https://github.com/puppeteer/puppeteer/)!
 
 ## Installation and configuration
-On your development machine you can do this by running the following commands:
+Run the following commands (or let the Peak installer handle this for you):
 
 ```bash
 composer require spatie/browsershot
-npm install puppeteer --global
+npm install puppeteer
 ```
 
 Once you've installed the required software you can enable the functionality in the SEO globals -> Social Sharing. Make sure to flick on the switch and select each collection for which you want to enable auto generated social images.
