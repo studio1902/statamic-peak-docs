@@ -26,7 +26,10 @@ If you don't plan on making any other changes to the SEO integration you only ha
 
 Depending on your setup, node or npm might be not directly available to Browsershot. If you need to manually set these binary paths, you can do this by setting `SOCIAL_IMAGE_NODE_BINARY` and `SOCIAL_IMAGE_NPM_BINARY` in your `.env` file.
 
-If you want to use a custom Chrome path you can configure this with the `SOCIAL_IMAGE_CHROME_PATH` variable in your `.env`.
+If you want to use a custom Chrome path, this is required on ARM, you can configure this with the `SOCIAL_IMAGE_CHROME_PATH` variable in your `.env`. To use a custom Chrome Path:
+1. Install Chromium: `sudo apt-get install chromium-browser`.
+2. Run `chromium-browser --version` to check your path.
+3. Add your path (e.g: `/usr/bin/chronium-browser`) to your `.env` with `SOCIAL_IMAGE_CHROME_PATH`.
 
 ## Customize images
 
