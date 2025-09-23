@@ -97,11 +97,13 @@ These are the presets available:
 * **Breadcrumbs**: A breadcrumbs partial.
 * **Business hours**: A business hours global and a list and call component that shows the business hours and if the business is currently open / available.
 * **Clients**: A routeless renamable client/partner collection with a logo cloud page builder block.
+* **Default blocks**: Reusable page builder blocks that can be placed globally.
 * **Events**: A dated events collection with index and show templates (including JSON-ld) and a page builder block.
 * **FAQ**: A FAQ collection with a page builder block (including JSON-ld).
 * **Footer**: A mega footer with multiple navs.
 * **Hero**: A hero layout component.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
+* **Intranet**: Intranet with frontend users and email verification. Uses page builder blocks for account management and automatically excludes pages featuring those blocks from static caching. 
 * **Language picker**: A language picker for when you use multisite.
 * **Links**: A LinkTree type blueprint and template.
 * **Lottie player**: A Lottie animation player.
