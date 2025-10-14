@@ -102,6 +102,7 @@ These are the presets available:
 * **FAQ**: A FAQ collection with a page builder block (including JSON-ld).
 * **Footer**: A mega footer with multiple navs.
 * **Hero**: A hero layout component.
+* **Horizon**: Installs Laravel Horizon configured for Peak.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
 * **Intranet**: Intranet with frontend users and email verification. Uses page builder blocks for account management and automatically excludes pages featuring those blocks from static caching. 
 * **Language picker**: A language picker for when you use multisite.
