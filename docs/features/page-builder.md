@@ -6,6 +6,16 @@ If the layout of a page is totally different - or you really want to - you can a
 
 The blocks in the page builder are vertically layed out using [Stacks](/features/stacks.md). Blocks itself use a custom [Fluid grid](/features/fluid-grid.md)
 
+## Styling
+
+The `.page-builder` class is a component defined in `resources/css/peak.css`. This class takes care of the vertical padding within the wrapper and the stack space between each block. This class also makes sure you can use the following modifiers on page builder blocks:
+
+* `no-space-t`: removes top margin.
+* `no-space-b`: removes top margin from next sibling.
+* `no-space-y`: removes top margin and top margin from next sibling.
+* `flush`: removes the top or bottom padding in the container when this is the first or last item in the page builder.
+* `stack-space-collapse`: if two siblings with this class follow each other, their margins will collapse.
+
 ## Adding blocks
 Add a block by using the [add block command](/getting-started/commands.html#add-page-builder-block). Alternatively you could edit `resources/fieldsets/page_builder.yaml` to add blocks (preferably imports) to the fieldset. In `resources/views/default.antlers.html` you can see the blocks being loaded. Antlers will look in the `resources/views/page_builder/` folder for partials with the handle of your block.
 

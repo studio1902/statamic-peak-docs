@@ -1,5 +1,10 @@
 # Upgrade Guide
 
+## Statamic 5.0 to 6.0
+* Run the Statamic installer with it's update scripts.
+* Update the Peak addons to their latest major version.
+* Optionally, mirror all the changes in Peak via [this PR](https://github.com/studio1902/statamic-peak/pull/449).
+
 ## Tailwind 3.4 to 4.0
 
 If you want to upgrade existing Peak projects to Tailwind 4 and Vite 6, make sure to take care of the following:

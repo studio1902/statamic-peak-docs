@@ -2,6 +2,10 @@
 
 The files `resources/fieldsets/buttons.yaml` and `resources/views/components/_buttons.antlers.html` go together. The button fieldset is a set in Bard but can also be called from other fieldsets where you want to include buttons. Just call the buttons partial in your template and one or multiple buttons will be rendered.
 
+## Styling
+
+Button styling is extracted to CSS classes `.button` and `.button-inline` and can be found in `resources/css/buttons.css`. The styling extracted to CSS makes it easier to style various variants you might need in your project.
+
 ## Rendering a single button
 
 In some cases you don't want to render dynamic buttons but a button to a specific entry or URL. This is possible using any of the following methods.
