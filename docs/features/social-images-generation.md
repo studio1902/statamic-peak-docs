@@ -2,14 +2,14 @@
 
 > You need to manually enable this feature.
 
-Peak can generate your social sharing images (OG and Twitter) and add them to your entries. To use this feature you need to [install Browsershot](https://github.com/spatie/browsershot) and its dependencies. A big thanks to [Spatie](http://spatie.be) and [Puppeteer](https://github.com/puppeteer/puppeteer/)!
+Peak can generate your social sharing images (OG) and add them to your entries. This feature uses [Browsershot](https://github.com/spatie/browsershot) and its dependencies. A big thanks to [Spatie](http://spatie.be) and [Puppeteer](https://github.com/puppeteer/puppeteer/)!
 
 ## Installation and configuration
-On your development machine you can do this by running the following commands:
+Run the following commands (or let the Peak installer handle this for you):
 
 ```bash
 composer require spatie/browsershot
-npm install puppeteer --global
+npm install puppeteer
 ```
 
 Once you've installed the required software you can enable the functionality in the SEO globals -> Social Sharing. Make sure to flick on the switch and select each collection for which you want to enable auto generated social images.
@@ -26,7 +26,10 @@ If you don't plan on making any other changes to the SEO integration you only ha
 
 Depending on your setup, node or npm might be not directly available to Browsershot. If you need to manually set these binary paths, you can do this by setting `SOCIAL_IMAGE_NODE_BINARY` and `SOCIAL_IMAGE_NPM_BINARY` in your `.env` file.
 
-If you want to use a custom Chrome path you can configure this with the `SOCIAL_IMAGE_CHROME_PATH` variable in your `.env`.
+If you want to use a custom Chrome path, this is required on ARM, you can configure this with the `SOCIAL_IMAGE_CHROME_PATH` variable in your `.env`. To use a custom Chrome Path:
+1. Install Chromium: `sudo apt-get install chromium-browser`.
+2. Run `chromium-browser --version` to check your path.
+3. Add your path (e.g: `/usr/bin/chronium-browser`) to your `.env` with `SOCIAL_IMAGE_CHROME_PATH`.
 
 ## Customize images
 
@@ -45,4 +48,4 @@ The actual generation of the images is a job, so it's queued when you use Redis.
 Once you've opted in the collections you want this available for you can select the entries you want to generate images for in the collection view.
 
 ## Listable columns
-Note that you could opt to toggle the `Social image` and `Twitter image` fields listable in the collections list view. That way you can or your client can easily scan collections for missing images.
+Note that you could opt to toggle the `Social image` fields listable in the collections list view. That way you or your client can  easily scan collections for missing images.
