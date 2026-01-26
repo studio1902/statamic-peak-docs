@@ -45,6 +45,14 @@ Peak doesn't use Asset Presets but generates images on the fly. This results in 
 ### Focal point and zoom
 Whatever options you use to render the image on the frontend, wether it's aspect ratio cropping or background covering an html element, the picture partial will respect the focal point and zoom level set by the Control Panel user.
 
+### Configuration
+If you want to alter the configuration for the picture tag you can run `php artisan vendor:publish --tag="statamic-peak-tools-config"` to publish the configuration file. In here you can edit:
+
+* `default-widths`: The sizes that get created and pushed to the srcset for each image format. Defaults to: `320`, `480`, `640`, `768`, `1024`, `1280`, `1440`, `1536` and `1680`.
+* `default_formats`: The image formats that will be generated for each image. Defaults to `avif`, `webp` and `jpg`.
+
+Make sure your server image processer (GD or Imagick) supports `avif`. Not all installations do. When you get served blank images, turn off `avif`.
+
 ### The Picture partial is deprecated
 The Antlers based picture partial will continue to work, but is deprecated and will be removed in a future version. If you want to update to the new Picture tag today, this is is really easy:
 
