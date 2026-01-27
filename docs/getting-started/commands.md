@@ -118,6 +118,7 @@ These are the presets available:
 * **Team members**: A renamable team member collection with a page builder block.
 * **Testimonials**: A renamable testimonial collection.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
+* **Theming**: A theming preset to scaffold page and/or block based color theming.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
 * **View transitions**: Enable view transitions with speculation rules.
 
