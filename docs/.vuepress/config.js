@@ -73,7 +73,6 @@ module.exports = {
             '/features/forms.md',
             '/features/globals.md',
             '/features/images.md',
-            '/features/live-preview.md',
             '/features/noscript.md',
             '/features/missing-alt-widget.md',
             '/features/navigation.md',

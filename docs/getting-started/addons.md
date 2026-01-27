@@ -39,7 +39,7 @@ php artisan vendor:publish --tag="statamic-peak-seo-views"
 > Note: When using the Eloquent Driver make sure you store blueprints and fieldsets as files and not in the database.
 
 ## Tools
-The Tools addon contains the following features: the [form submission logic](/features/forms.html#forms), [picture partial](/features/images.html#images), [the noscript partial](/features/noscript.html), [the skip to content](/features/skip-to-content.html) partial [the pagination](/features/pagination.html#pagination) partial, [the toolbar](/other/toolbar.html#toolbar), [the missing alt text widget](/features/missing-alt-widget.html) and [live Preview](/features/live-preview.html) enhancements.
+The Tools addon contains the following features: the [form submission logic](/features/forms.html#forms), [picture partial](/features/images.html#images), [the noscript partial](/features/noscript.html), [the skip to content](/features/skip-to-content.html) partial [the pagination](/features/pagination.html#pagination) partial, [the toolbar](/other/toolbar.html#toolbar) and [the missing alt text widget](/features/missing-alt-widget.html).
 
 Run the following commands to publish views.
 
