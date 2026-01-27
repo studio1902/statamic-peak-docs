@@ -104,7 +104,7 @@ These are the presets available:
 * **Hero**: A hero layout component.
 * **Horizon**: Installs Laravel Horizon configured for Peak.
 * **Image credits**: An asset blueprint and page builder block that lists images with credits.
-* **Intranet**: Intranet with frontend users and email verification. Uses page builder blocks for account management and automatically excludes pages featuring those blocks from static caching. 
+* **Intranet**: Intranet with frontend users and email verification. Uses page builder blocks for account management and automatically excludes pages featuring those blocks from static caching.
 * **Language picker**: A language picker for when you use multisite.
 * **Links**: A LinkTree type blueprint and template.
 * **Lottie player**: A Lottie animation player.
@@ -119,6 +119,7 @@ These are the presets available:
 * **Testimonials**: A renamable testimonial collection.
 * **Theme toggle**: A theme toggle typically used for a Tailwind class based dark mode.
 * **Vacancies**: A dated renamable vacancies collection with index and show templates (including JSON-ld).
+* **View transitions**: Enable view transitions with speculation rules.
 
 ## Install Set
 This command installs premade sets to the Article (Bard) field and generates the files needed.
