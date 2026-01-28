@@ -8,6 +8,7 @@ Peak comes with a picture tag that will add responsive sourcesets to your images
 * `aspect_ratio`: *string*, Pass in an aspect ratio to crop the image in a certain way, for example: `16/9`.
 * `class`: *string*, optional css classes that should be applied to the image.
 * `cover`: *boolean*, true means the image should cover the containing element.
+* `contain`: *boolean*, true means the image should contain with the containing element.
 * `sizes`: *string*, the sizes attribute that informs the browser how the image should be rendered.
 * `sources`: *array*, multiple source images, each with their own `image`, `media` (query) and `aspect_ratio`.
 * `lazy`: *bool*, the image should be lazy loaded, defaults to `true`. Explicitely set `lazy="false"` for images above the "fold".
