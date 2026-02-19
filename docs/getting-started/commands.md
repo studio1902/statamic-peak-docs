@@ -39,6 +39,11 @@ With this command you can choose a type (component, layout, snippet or typograph
 
 Run `php please peak:make:partial`.
 
+## Make Asset Container
+With this command you can generate an asset container, filesystem and optionally grant edit permissions to the editor.
+
+Run `php please peak:make:asset-container`.
+
 ## Make Global
 With this command you can generate a global with a blueprint and optionally grant edit permissions to the editor.
 
