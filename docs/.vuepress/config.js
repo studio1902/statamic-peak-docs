@@ -100,6 +100,7 @@ module.exports = {
             '/other/redis-queue.md',
             '/other/reduced-motion.md',
             '/other/reference-assets-in-css.md',
+            '/other/robots.md',
             '/other/toolbar.md',
             '/other/updating-peak.md',
             '/other/vite.md',
