@@ -12,6 +12,7 @@ Peak comes with a picture tag that will add responsive sourcesets to your images
 * `sizes`: *string*, the sizes attribute that informs the browser how the image should be rendered.
 * `sources`: *array*, multiple source images, each with their own `image`, `media` (query) and `aspect_ratio`.
 * `lazy`: *bool*, the image should be lazy loaded, defaults to `true`. Explicitely set `lazy="false"` for images above the "fold".
+* `fetchpriority`: *string*, with what priority an image should be loaded. Accepts `high`, `auto` or `low`.
 * `preload`: *bool*, pushes a `rel="preload"` link tag to the document head so the browser preloads the image.
 * `quality` *int* Set image quality. Defaults to 85.
 * `bg` *string*, Sets a background color for transparent images.
