@@ -23,13 +23,50 @@ And edit the files you want to make changes to in `resources/views/vendor/statam
 * Customize the sitemap: which collections are included and per entry frequency and priority settings.
 * No-index for entries, also excludes from sitemap.
 * JSON-ld schema objects.
-* Hreflang tags automatically generated (for selected site locales).
+* Hreflang tags automatically generated.
 * Knowledge graph data (organization, person or custom).
 * JSON-ld breadcrumbs.
 * Trackers: Google Analytics, Google Tag Manager, Site Verification, Fathom or Cloudflare Web Analytics.
 * Consent Banner.
 
 > Note: by default only `superusers` and the `marketeer` role get access to the SEO global configuration.
+
+## Hreflang tags
+
+Hreflang tags are automatically created on a multisite environment when you've turned on the toggle in the SEO global. However, if you run a multisite environment with multiple languages and multiple site structures, you don't want an hreflang tag for each site in your `sites.yaml` file. In that case you can add an `identifier` to the `attributes` array for each of your site to group sites.
+
+In this example we have a main site in three locales, and a separate site called `support`:
+
+```yaml
+en:
+  name: 'Main English'
+  locale: en_GB
+  url: '{{ config:app:url }}'
+  lang: English
+  attributes:
+    identifier: main
+fr:
+  name: 'Main French'
+  url: '{{ config:app:url }}/fr/'
+  locale: fr_FR
+  lang: French
+  attributes:
+    identifier: main
+it:
+  name: 'Main Italian'
+  url: '{{ config:app:url }}/it/'
+  locale: it_IT
+  lang: Italian
+  attributes:
+    identifier: main
+support:
+  name: 'Support English'
+  url: '{{ config:app:url_2 }}'
+  locale: en_GB
+  lang: English
+  attributes:
+    identifier: support
+```
 
 ## GDPR Compliant Consent Banner
 
