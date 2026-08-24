@@ -1,8 +1,8 @@
 # Tailwind CSS configuration
 
-Peak comes with a `resources/css/site.css` which contains the CSS based configurtion for Tailwind. This file would typically include all custom styles and config for the project you're currently working on. It also imports multiple Tailwind CSS config files each responsible for various parts of your website. Next to the default config, it uses the following configuration files:
+Peak comes with a `resources/css/theme.css` which contains the CSS based configuration for Tailwind. This file would typically include all custom styles and config for the project you're currently working on. It also imports multiple Tailwind CSS config files each responsible for various parts of your website. Next to the default config, it uses the following configuration files:
 
-1. `resources/css/typography.css`: the Tailwind CSS typography configuration for customizing the `prose` class.
+1. `resources/css/typography.css`: the site typography and `prose` class configuration.
 2. `resources/css/peak.css`: all Peak's configuration, utilities and components and importing:
 3. `resources/js/tailwind.peak.js`: Peak utilities that currently can't be defined in CSS.
 
