@@ -8,4 +8,16 @@ Peak comes with a `resources/css/theme.css` which contains the CSS based configu
 
 All configuration files are fully documented. Read the Tailwind CSS docs on [theme configuration](https://tailwindcss.com/docs/theme/) for more information.
 
-Read up on the [Tailwind CSS Forms](https://github.com/tailwindlabs/tailwindcss-forms) and [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography) plugins. They're easy to customize and the config file for typography already includes some basic customization so your theme colors are automatically applied. The plugins are easy to remove if you don't want to use them.
+Read up on the [Tailwind CSS Forms](https://github.com/tailwindlabs/tailwindcss-forms) plugin. The plugin is easy to remove if you don't want to use it.
+
+## Utilities
+
+There's a `resources/css/utilities.css` file for custom utilities you may need. The file ships with `grid-cols-fluid` and `text-box-trim-*` utilities.
+
+### grid-cols-fluid
+
+Use this utility to create responsive grid columns without having to rely on breakpoints. The minimum column width is `350px` but you can alter this by configuring the custom property on your element: `style="--min-column-width: 250px"`.
+
+### text-box-trim
+
+Use the `text-box-trim-start`, `text-box-trim-end` and `text-box-trim-both` utilities to trim the textboxes if you need pixel perfect vertical typography alignment in browsers that support it.
