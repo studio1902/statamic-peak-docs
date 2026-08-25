@@ -1,4 +1,4 @@
-# Tailwind CSS configuration
+# Tailwind and CSS configuration
 
 Peak comes with a `resources/css/theme.css` which contains the CSS based configuration for Tailwind. This file would typically include all custom styles and config for the project you're currently working on. It also imports multiple Tailwind CSS config files each responsible for various parts of your website. Next to the default config, it uses the following configuration files:
 
